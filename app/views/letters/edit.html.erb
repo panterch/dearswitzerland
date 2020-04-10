@@ -1,0 +1,42 @@
+<h1 class="mt-3 mb-3">
+  <%= t("letters.edit.title1") %>
+  <strong><%= t("letters.edit.title2") %></strong>
+</h1>
+
+<p><%= t("letters.edit.hint") %></p>
+
+<%= form_with(model: @letter, local: true, id: "step2", class: "pt-2") do |form| %>
+  <fieldset id="personal">
+    <%= form.text_field :name, placeholder: t("letters.edit.placeholder_name") %>
+    <%= form.check_box :publish_name %>
+    <%= form.label :publish_name, t("letters.edit.label_publish_name") %>
+    <%= form.email_field :email, placeholder: t("letters.edit.placeholder_email"), required: true %>
+    <%= form.label :email, t("letters.edit.label_email") %>
+    <%= form.text_field :age, placeholder: t("letters.edit.placeholder_age") %>
+    <%= form.check_box :publish_age %>
+    <%= form.label :publish_age, t("letters.edit.label_publish_age") %>
+    <%= form.select :canton, options_for_canton(@letter.canton) %>
+    <%= form.check_box :publish_canton %>
+    <%= form.label :publish_canton, t("letters.edit.label_publish_canton") %>
+    <%= form.select :lang, options_for_lang %>
+    <p class="pt-1"><%= t("letters.edit.required")%></p>
+  </fieldset>
+  <fieldset id="consent" class="mt-2">
+    <h3><%= t("letters.edit.legend_consent") %></h3>
+    <div class="field">
+      <%= form.check_box :catalog %>
+      <%= form.label :catalog, t("letters.edit.label_catalog") %>
+    </div>
+    <div class="field">
+      <%= form.check_box :recall %>
+      <%= form.label :recall, t("letters.edit.label_recall") %>
+    </div>
+    <div class="field">
+      <%= form.check_box :newsletter %>
+      <%= form.label :newsletter, t("letters.edit.label_newsletter") %>
+    </div>
+  </fieldset>
+
+  <%= submit_tag t("letters.edit.submit") %>
+
+<% end %>

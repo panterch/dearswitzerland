@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  last_name: MyString
+  pre_name: MyString
+  email: MyString
+  zip: MyString
+  lang: MyString
+  online: false
+  print: false
+  anonymous: false
+  recall: false
+  newsletter: false
+
+two:
+  last_name: MyString
+  pre_name: MyString
+  email: MyString
+  zip: MyString
+  lang: MyString
+  online: false
+  print: false
+  anonymous: false
+  recall: false
+  newsletter: false

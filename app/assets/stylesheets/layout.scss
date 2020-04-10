@@ -1,0 +1,266 @@
+$color-highlight: #FF3311;
+$color-background: #fef9f2;
+$color-normal: #1c1a2a;
+
+a, a:visited, a:hover {
+  color: inherit;
+}
+
+body {
+  background-color: $color-background;
+  color: $color-normal;
+  margin: 33px;
+}
+
+body, p, ol, ul, td {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  line-height: 38px;
+}
+
+
+header nav {
+  text-align: right;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
+
+  ul#locales {
+    margin-left: 100px;
+  }
+
+  li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+
+  li.active {
+    color: $color-highlight;
+    font-weight: bold;
+  }
+  a:hover {
+    color: $color-highlight;
+    text-decoration: none;
+  }
+}
+
+#logo {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  height: 210px;
+  width: 210px;
+  z-index: -1;
+}
+
+main {
+  text-align: center;
+  width: 960px;
+  margin: auto;
+}
+
+h1 {
+  font-weight: bolder;
+  text-decoration: underline;
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 0.7;
+
+  strong {
+    font-size: 90px;
+    text-transform: none;
+  }
+
+  strong:before {
+    content: '\A';
+    white-space: pre;
+  }
+}
+
+input[type=submit] {
+  background-color: #000;
+  color: #FFF;
+  font-size: 18px;
+  padding: 18px;
+  line-height: 18px;
+  border: 0px;
+  font-weight: bold;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+  &:hover {
+    background-color: #666666;
+  }
+}
+
+
+@for $i from 1 through 5 {
+  #{".mt-"+$i} {
+    margin-top: #{$i+"em"};
+  }
+  #{".mb-"+$i} {
+    margin-bottom: #{$i+"em"};
+  }
+  #{".pt-"+$i} {
+    padding-top: #{$i+"em"};
+  }
+  #{".pb-"+$i} {
+    padding-bottom: #{$i+"em"};
+  }
+}
+
+form#step2 {
+  text-align: left;
+
+  input[type=text], input[type=email], select {
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    margin-top: 2em;
+    border: 1px solid #000000;
+    padding-left: 0.5em;
+  }
+
+  input[type=checkbox] {
+    position: relative;
+    vertical-align: middle;
+    top: 2px;
+  }
+
+  fieldset#personal {
+    width: 500px;
+    margin: auto;
+
+    label {
+      display: inline;
+      font-size: 15px;
+      margin: 0;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+  }
+
+  fieldset#consent {
+    input[type=checkbox] {
+      position: relative;
+      vertical-align: top;
+      top: 10px;
+      width: 30px;
+    }
+
+    label {
+      display: inline-block;
+      width: 920px;
+    }
+
+  }
+}
+
+.trix {
+  position: relative;
+
+  trix-toolbar {
+    display: none;
+  }
+
+  trix-editor.letter {
+  }
+  input[type=submit] {
+    position: absolute;
+    bottom: 30px;
+    right: 110px;
+  }
+}
+
+.letter {
+  text-align: left;
+  font-size: 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 824px;
+  min-height: 1132px;
+  padding: 12px;
+  margin: auto;
+  overflow: hidden;
+
+  h1 {
+    color: $color-highlight;
+    text-decoration: none;
+    font-weight: normal;
+    text-transform: none;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    font-size: 24px;
+  }
+
+
+}
+
+.gallery {
+  position: relative;
+  nav {
+    position: absolute;
+    top: 500px;
+  }
+  nav#prev {
+    left: 0px;
+  }
+  nav#next {
+    right: 0px;
+  }
+
+}
+
+
+.thumbnail {
+
+  float: left;
+  width: 240px;
+  padding: 10px;
+  cursor: zoom-in;
+
+  a, a:hover {
+    text-decoration: none;
+    cursor: zoom-in;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    display: inline-block;
+  }
+
+  .letter {
+    position: relative;
+    font-size: 12px;
+    text-align: left;
+    width: 220px;
+    height: 311px;
+    min-height: 311px;
+    padding: 5px;
+  }
+
+  .letter:before {
+    content:'';
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    background:linear-gradient(transparent 240px, white);
+  }
+
+  h1 {
+    font-size: 14px;
+  }
+
+}
+
+

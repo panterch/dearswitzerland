@@ -1,0 +1,23 @@
+<h1 class="mt-3 mb-3">
+  <%= t("letters.new.title1") %>
+  <strong><%= t("letters.new.title2") %></strong>
+</h1>
+
+<p><%= t("letters.new.question1") %></p>
+<p><%= t("letters.new.question2") %></p>
+<p><%= t("letters.new.question3") %></p>
+
+<h2 class="mt-1 mb-2">
+  <%= t("letters.new.subtitle") %>
+</h2>
+
+
+<%= form_with(model: @letter, local: true) do |form| %>
+
+  <div class="trix" data-controller="trix">
+    <%= form.rich_text_area :body, class: "letter" %>
+    <%= submit_tag t("letters.edit.submit") %>
+  </div>
+
+
+<% end %>

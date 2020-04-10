@@ -1,0 +1,58 @@
+en:
+
+
+  locales:
+    en: English
+    de: German
+    it: Italian
+    rm: Romansh
+    fr: French
+
+  nav:
+    new_letter_path: write
+    letters_path: letters
+    about_path: about
+    faq_path: FAQ
+
+  letters:
+    new:
+      title1: Dear
+      title2: Switzerland
+      question1: What did you learn from the Covid-19 crisis?
+      question2: What has changed that you hope will continue?
+      question3: Or what do you want to share with the future Switzerland?
+      subtitle: Let us know - by writing a letter.
+      default_body: "Dear Switzerland,"
+      submit: Send letter
+
+    edit:
+      title1: nearly
+      title2: there
+      hint: "Please fill in your details so we can upload your letter,  and decide which information you want to have published."
+      placeholder_name: Your name
+      label_publish_name: I agree to publish my name
+      placeholder_email: "EMail*"
+      label_email: This information will not be published - verification only
+      placeholder_age: Age
+      placeholder_canton: Canton
+      label_publish_age: I agree to publish my age
+      label_publish_canton: I agree to publish the canton I live in
+      legend_consent: "Choose all that apply:"
+      label_catalog: "Do you approve to have your letter published in the online catalog and considered for the Dear Switzerland book?"
+      label_recall: "Do you want to receive a copy of your letter via email one year from now?"
+      label_newsletter: "Do you want to receive email updates about the Dear Switzerland initiative?"
+      required: "* required"
+      submit: Submit your letter
+
+    thanks:
+      title1: thank
+      title2: You
+      subtitle: Your letter was succesfully uploaded.
+      p1: You will reveice a confirmation by email in a few moments.
+      p2: "If you change your mind and would like to withdraw your letter, please send us an email:"
+
+    index:
+      title1: the
+      title2: Letters
+      hint: "This is a collection of the letters we’ve received so far.
+        Feel free to read through the thoughts of other people in Switzerland."

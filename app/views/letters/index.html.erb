@@ -1,0 +1,12 @@
+<%= render "filter" %>
+
+<div data-controller="thumbnails">
+  <% @letters.each do |letter| %>
+    <div class="thumbnail" data-action="click->thumbnails#open">
+      <div class="letter">
+        <%= letter.body %>
+      </div>
+      <%= link_to letter.display_name, letter_path(letter) %>
+    </div>
+  <% end %>
+</div>
