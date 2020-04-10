@@ -6,7 +6,7 @@ class LettersController < ApplicationController
   # GET /letters
   # GET /letters.json
   def index
-    @letters = Letter.public.with_rich_text_body.order("id DESC")
+    @letters = Letter.public.with_rich_text_body.order("id DESC").limit(100)
   end
 
   # GET /letters/1
