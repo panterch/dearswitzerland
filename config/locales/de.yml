@@ -1,2 +1,73 @@
 de:
-  hello: "Hallo Welt"
+  locales:
+    en: Englisch
+    de: Deutsch
+    it: Italienisch
+    rm: Rätoromanisch
+    fr: Französisch
+
+  nav:
+    new_letter_path: schreiben
+    letters_path: briefe
+    about_path: about
+    faq_path: FAQ
+
+  letters:
+    new:
+      title1: Liäbi
+      title2: Schwiiz
+      question1: Was hast du aus der Covid-19 Krise gelernt?
+      question2: Von dem was sich verändert hat was wünscht du, das bleibt?
+      question3: Oder ganz allgemein, was möchtest du der zukünftigen Schweiz sagen?
+      subtitle: Sag es uns - in dem Du ein Brief schreibst.
+      default_body: "Liäbi Schweiz,"
+      submit: Brief abschicken
+
+    edit:
+      title1: fast
+      title2: geschafft
+      hint: "Wir brauchen noch ein Paar Angaben, damit wir den Brief hochladen können. Und bitte gib uns an, welche Informationen du über dich veröffentlicht haben möchtest."
+      placeholder_name: Dein Name
+      label_publish_name: Ich stimme zu, dass mein Name veröffentlicht wird.
+      placeholder_email: "EMail*"
+      label_email: wird nicht veröffentlicht, wird für Verifikation benötigt
+      placeholder_age: Alter
+      placeholder_canton: Kanton
+      label_publish_age: Ich stimme zu, dass mein Alter veröffentlicht wird.
+      label_publish_canton: Ich stimme zu, dass mein Wohnkanton veröffentlicht wird.
+      legend_consent: "Wähle alle zutreffenden Antworten aus:"
+      label_catalog: "Stimmst du zu, deinen Brief im Online Katalog zu veröffentlichen und dass er für das Buch “Liäbi Schwiiz” berücksichtigt wird? ?"
+      label_recall: "Möchtest du in einem Jahr eine Kopie deines Briefes via Email erhalten?"
+      label_newsletter: "Möchtest du per Email über unsere Initiative auf dem Laufenden gehalten werden?"
+      required: "* erforderlich"
+      submit: Brief abschicken
+
+    show:
+      private: Der Brief ist nur für dich sichtbar.
+
+    thanks:
+      title1: vielen
+      title2: dank
+      subtitle: Dein Brief ist hochgeladen!
+      p1: Du wirst in Kürze eine Bestätigung per Email erhalten.
+      p2: "Falls du deine Meinung änderst und deinen Brief zurückrufen möchtest, kannst du uns eine Email schreiben an:"
+
+    index:
+      title1: die
+      title2: briefe
+      hint: "Hier findest du alle Briefe, die wir erhalten haben.
+             Lies dich durch und erfahre, welche Gedanken andere mit dir und der Schweiz teilen möchten. "
+
+  footer:
+    address1: Viadukt 93 - 95
+    address2: 8005 Zürich, Schweiz
+    versusvirus: "Liäbi Schweiz ist eine Initiative, die aus dem #versusvirus Hackathon geboren wurde."
+
+  email:
+    thanks:
+      subject: Danke !
+      title1: vielen
+      title2: dank
+      p1: Wir danken dir, dass du deine Gedanken, Wünsche, Hoffnungen und Geschichten mit Liäbi Schwiiz teilst.
+      p2: Wir werden deinen Brief sichten und schnellstmöglichst auf dearswitzerland.org hochladen.
+      share: Teile deinen Brief mit deinen Freunden.
