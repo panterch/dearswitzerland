@@ -5,7 +5,7 @@
 
 <p><%= t("letters.edit.hint") %></p>
 
-<%= form_with(model: @letter, local: true, id: "step2", class: "pt-2") do |form| %>
+<%= form_with(model: @letter, local: true, id: "step2", class: "pt-2 pb-2") do |form| %>
   <fieldset id="personal">
     <%= form.text_field :name, placeholder: t("letters.edit.placeholder_name") %>
     <%= form.check_box :publish_name %>

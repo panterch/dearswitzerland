@@ -61,6 +61,7 @@ header nav {
 main {
   text-align: center;
   width: 960px;
+  min-height: 600px;
   margin: auto;
 }
 
@@ -218,6 +219,9 @@ form#step2 {
 
 }
 
+.thumbnails {
+  overflow: auto;
+}
 
 .thumbnail {
 

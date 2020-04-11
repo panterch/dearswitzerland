@@ -8,15 +8,21 @@ class Letter < ApplicationRecord
   end
 
   def next
+    return if private?
     Letter.public.where("id > ?", id).order("id ASC").first
   end
 
   def prev
+    return if private?
     Letter.public.where("id < ?", id).order("id DESC").first
   end
 
   def to_param
     slug
+  end
+
+  def private?
+    !submitted? || !catalog?
   end
 
   def display_name

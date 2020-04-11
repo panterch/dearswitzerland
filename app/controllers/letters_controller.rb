@@ -50,6 +50,7 @@ class LettersController < ApplicationController
 
     respond_to do |format|
       if @letter.update(letter_params)
+        ApplicationMailer.with(letter: @letter).thanks_email.deliver_later
         format.html { redirect_to thanks_letter_url(@letter) }
         format.json { render :show, status: :ok, location: @letter }
       else

@@ -28,7 +28,7 @@ en:
     edit:
       title1: nearly
       title2: there
-      hint: "Please fill in your details so we can upload your letter,  and decide which information you want to have published."
+      hint: "Please fill in your details so we can upload your letter, and decide which information you want to have published."
       placeholder_name: Your name
       label_publish_name: I agree to publish my name
       placeholder_email: "EMail*"
@@ -43,6 +43,9 @@ en:
       label_newsletter: "Do you want to receive email updates about the Dear Switzerland initiative?"
       required: "* required"
       submit: Submit your letter
+
+    show:
+      private: This letter is only visible for you.
 
     thanks:
       title1: thank
@@ -61,3 +64,12 @@ en:
     address1: Viadukt 93 - 95
     address2: 8005 Zürich, Switzerland
     versusvirus: "An initiaive out of the #versusvirus hackathon."
+  
+  email:
+    thanks:
+      subject: Thanks!
+      title1: thank
+      title2: You
+      p1: Thank you for sharing your thoughts, wishes, hopes, comments and personal stories with dearswitzerland.
+      p2: Your letter will be processed and after a successful screening uploaded to dearswitzerland.org 
+      share: Share your letter with your friends 
