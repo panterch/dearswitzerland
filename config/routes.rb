@@ -9,9 +9,11 @@ Rails.application.routes.draw do
     get 'about', to: 'statics#about'
     get 'faq', to: 'statics#faq'
 
+    
   end
 
+  get "/:locale", to: redirect('/%{locale}/letters/new')
   root to: redirect('/en/letters/new')
-
+  
 end
 
