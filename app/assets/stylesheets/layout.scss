@@ -9,7 +9,6 @@ a, a:visited, a:hover {
 body {
   background-color: $color-background;
   color: $color-normal;
-  margin: 33px;
 }
 
 body, p, ol, ul, td {
@@ -37,6 +36,7 @@ header nav {
     display: inline-block;
     text-transform: uppercase;
     font-size: 20px;
+    padding-right: 10px;
   }
 
   li.active {
@@ -52,7 +52,7 @@ header nav {
 #logo {
   position: absolute;
   left: 30px;
-  top: 30px;
+  top: 15px;
   height: 210px;
   width: 210px;
   z-index: -1;
@@ -260,6 +260,20 @@ form#step2 {
   h1 {
     font-size: 14px;
   }
+
+}
+
+footer {
+  text-align: center;
+  background-color: #ffffff;
+  line-height: 1.2;
+  img.icon {
+    width: 46px;
+  }
+  address, p {  
+    font-size: 15px;
+  }
+
 
 }
 

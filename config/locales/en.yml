@@ -56,3 +56,8 @@ en:
       title2: Letters
       hint: "This is a collection of the letters we’ve received so far.
         Feel free to read through the thoughts of other people in Switzerland."
+
+  footer:
+    address1: Viadukt 93 - 95
+    address2: 8005 Zürich, Switzerland
+    versusvirus: "An initiaive out of the #versusvirus hackathon."
