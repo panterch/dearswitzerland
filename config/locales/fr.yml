@@ -1,2 +1,74 @@
 fr:
-  hello: "Bonjour monde"
+
+  locales:
+    en: Anglais
+    de: Allemand
+    it: Italien
+    rm: Romanche
+    fr: Français
+
+  nav:
+    new_letter_path: écrire
+    letters_path: lettres
+    about_path: à propos
+    faq_path: FAQ
+
+  letters:
+    new:
+      title1: Chère
+      title2: Suisse
+      question1: Qu’avez vous appris de la crise du COVID-19?
+      question2: Qu’est qui a changé que vous souhaitez voir continuer?
+      question3: Ou que voulez-vous partager à la Suisse future?
+      subtitle: Faites-nous en part - en écrivant une lettre.
+      default_body: "Chère Suisse,"
+      submit: Envoyer lettre
+
+    edit:
+      title1: vous y êtes
+      title2: presque
+      hint: "Veuillez remplir les champs ci-dessous pour choisir les informations que vous voulez publier et qu’on puisse afficher votre lettre sur le site."
+      placeholder_name: Prénom
+      label_publish_name: J’autorise à publier mon prénom
+      placeholder_email: "EMail*"
+      label_email: information non destiné à la publication, à but de vérification seulement
+      placeholder_age: Âge
+      placeholder_canton: Canton
+      label_publish_age: J’autorise à publier mon âge
+      label_publish_canton: J’autorise à publier mon canton
+      legend_consent: "Choisissez tout ce qui est valable:"
+      label_catalog: "Voulez-vous que votre lettre soit publiée sur le catalogue en ligne et considérée pour le livre ”Chère Suisse”? ?"
+      label_recall: "Voulez-vous recevoir une copie de votre mail dans un an ? "
+      label_newsletter: "Voulez-vous recevoir des newsletters concernant l’initiative ”Chère Suisse” ?"
+      required: "* requis"
+      submit: Envoyer lettre
+
+    show:
+      private: Cette lettre n’est visible qu’à vous.
+
+    thanks:
+      title1: merci
+      title2: beaucoup
+      subtitle: Votre lettre a été correctement transférée.
+      p1: Vous allez recevoir une confirmation par mail dans quelques instants.
+      p2: "Si vous changez d’avis et souhaitez retirer votre lettre, veuillez nous envoyez un e-mail correspondant à:"
+
+    index:
+      title1: les
+      title2: Lettres
+      hint: "Ceci est une collection de lettres qu’on a reçu au jour d’aujourd’hui.
+        N’hésitez pas à parcourir les pensées et réflexions écrites par d'autres personnes en Suisse."
+
+  footer:
+    address1: Viadukt 93 - 95
+    address2: 8005 Zürich, Suisse
+    versusvirus: "Une initiative issue du hackathon #versusvirus."
+
+  email:
+    thanks:
+      subject: Merci !
+      title1: merci
+      title2: beaucoup
+      p1: Merci d’avoir partagé vos pensées, vos espoirs et vos histoires avec “Chère Suisse”.
+      p2: Votre lettre va être traitée dans les plus brefs délais et publiée sur “Chère Suisse”
+      share: Partagez votre lettres avec vos proches.
