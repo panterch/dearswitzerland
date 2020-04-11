@@ -24,6 +24,10 @@ en:
       subtitle: Let us know - by writing a letter.
       default_body: "Dear Switzerland,"
       submit: Send letter
+      online1: Like to do it online?
+      online2: Start writing right away
+      offline1: Prefer pen and paper?
+      offline2: Download template
 
     edit:
       title1: nearly
