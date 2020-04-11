@@ -22,6 +22,10 @@ de:
       subtitle: Sag es uns - in dem Du ein Brief schreibst.
       default_body: "Liäbi Schweiz,"
       submit: Brief abschicken
+      online1: Du möchtest das online machen?
+      online2: Dann leg gleich los.
+      offline1: Du bevorzugst Stift und Papier?
+      offline2: Lade die Briefvorlage runter.
 
     edit:
       title1: fast
