@@ -63,6 +63,7 @@ it:
       title2: Lettere
       hint: "Queste sono le lettere che abbiamo ricevuto oggi.
              Non esitate a leggere i pensiere e le riflessioni scritti dalle altre persone in Svizzera."
+      filter: "Filtrare per lingua:"
 
   footer:
     address1: Viadukt 93 - 95
