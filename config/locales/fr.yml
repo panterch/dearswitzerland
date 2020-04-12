@@ -23,6 +23,10 @@ fr:
       subtitle: Faites-nous en part - en écrivant une lettre.
       default_body: "Chère Suisse,"
       submit: Envoyer lettre
+      online1: Vous voulez l’écrire en ligne?
+      online2: Commencez à la rédiger toute suite
+      offline1: Vous préférez écrire au crayon et papier?
+      offline2: Télécharger modèle
 
     edit:
       title1: vous y êtes
