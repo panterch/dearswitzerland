@@ -11,6 +11,7 @@ de:
     letters_path: briefe
     about_path: about
     faq_path: FAQ
+    upload_letter_path: hochladen
 
   letters:
     new:
@@ -26,6 +27,10 @@ de:
       online2: Dann leg gleich los.
       offline1: Du bevorzugst Stift und Papier?
       offline2: Lade die Briefvorlage runter.
+
+    upload:
+      nofile: Brief hochladen
+      hasfile: Danke!
 
     edit:
       title1: fast

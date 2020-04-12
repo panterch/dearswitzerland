@@ -13,6 +13,7 @@ it:
     letters_path: lettera
     about_path: a proposito
     faq_path: FAQ
+    upload_letter_path: sottomettere
 
   letters:
     new:
@@ -28,6 +29,10 @@ it:
       online2: Cominciate la redazione subito
       offline1: Preferite scriverla con matita e carta?
       offline2: Scaricare esemplare
+
+    upload:
+      nofile: Sottomettere la lettera
+      hasfile: Grazie!
 
     edit:
       title1: ci siete
