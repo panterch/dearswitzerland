@@ -62,6 +62,7 @@ fr:
       title2: Lettres
       hint: "Ceci est une collection de lettres qu’on a reçu au jour d’aujourd’hui.
         N’hésitez pas à parcourir les pensées et réflexions écrites par d'autres personnes en Suisse."
+      filter: "Trier par langue:"
 
   footer:
     address1: Viadukt 93 - 95

@@ -61,6 +61,7 @@ de:
       title2: briefe
       hint: "Hier findest du alle Briefe, die wir erhalten haben.
              Lies dich durch und erfahre, welche Gedanken andere mit dir und der Schweiz teilen möchten. "
+      filter: "Sortiere nach Sprache:"
 
   footer:
     address1: Viadukt 93 - 95
