@@ -1,5 +1,7 @@
 class Letter < ApplicationRecord
   has_rich_text :body
+  has_one_attached :user_upload
+
   before_create :set_slug
   enum status: [ :draft, :submitted ]
 

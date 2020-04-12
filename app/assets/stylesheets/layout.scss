@@ -83,7 +83,7 @@ h1 {
   }
 }
 
-input[type=submit], a.button {
+input[type=submit], a.button, span.button {
   background-color: #000;
   color: #FFF;
   font-size: 18px;
@@ -99,8 +99,39 @@ input[type=submit], a.button {
   }
 }
 
-a.button {
+a.button, span.button {
+  cursor: pointer;
   display: inline-block;
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: block;
+
+  .btn {
+    background-color: white;
+    width: 100%;
+    font-size: 15px;
+    margin-top: 2em;
+    border: 1px solid #000000;
+    line-height: 1.5;
+    padding: 3em;
+    margin: 0;
+    font-weight: bold;
+    min-height: 150px;
+  }
+}
+
+
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 120px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
 }
 
 
@@ -145,10 +176,12 @@ form#step2 {
     top: 2px;
   }
 
-  fieldset#personal {
+  fieldset#personal, fieldset#upload {
     width: 500px;
     margin: auto;
+  }
 
+  fieldset#personal {
     label {
       display: inline;
       font-size: 15px;
@@ -226,6 +259,13 @@ form#step2 {
   }
   nav#next {
     left: 0px;
+  }
+  a.button {
+    display: block;
+    margin: auto;
+    width: 300px;
+    margin-top: 500px;
+    text-align: center;
   }
 
 }

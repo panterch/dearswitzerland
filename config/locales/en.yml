@@ -13,6 +13,7 @@ en:
     letters_path: letters
     about_path: about
     faq_path: FAQ
+    upload_letter_path: upload
 
   letters:
     new:
@@ -28,6 +29,10 @@ en:
       online2: Start writing right away
       offline1: Prefer pen and paper?
       offline2: Download template
+
+    upload:
+      nofile: upload your letter
+      hasfile: Thanks!
 
     edit:
       title1: nearly

@@ -28,23 +28,35 @@ class LettersController < ApplicationController
   def edit
   end
 
+  def upload
+    @nav = :upload
+    @letter = Letter.new
+    @letter.lang = I18n.locale
+    @letter.catalog = true
+  end
+
   # POST /letters
   # POST /letters.json
   def create
     @letter = Letter.new(letter_params)
-    @letter.lang = I18n.locale
-    @letter.catalog = true
-    @letter.status = :draft
 
-    respond_to do |format|
-      if @letter.save
-        format.html { redirect_to edit_letter_url(@letter) }
-        format.json { render :show, status: :created, location: @letter }
-      else
-        format.html { render :new }
-        format.json { render json: @letter.errors, status: :unprocessable_entity }
-      end
+    # letter came via online form - personal data needed
+    if @letter.body.present?
+      @letter.lang ||= I18n.locale
+      @letter.catalog ||= true
+      @letter.status = :draft
+      @letter.save!
+      return redirect_to edit_letter_url(@letter)
     end
+    # letter came via upload - all data present
+    if @letter.user_upload.present?
+      @letter.status = :submitted
+      @letter.save!
+      ApplicationMailer.with(letter: @letter).thanks_email.deliver_later
+      return redirect_to thanks_letter_url(@letter)
+    end
+    # should not be reached
+    render :new
   end
 
   # PATCH/PUT /letters/1
@@ -86,7 +98,7 @@ class LettersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def letter_params
-      params.require(:letter).permit(:body, :name, :email, :age, :canton, :lang, :catalog, :publish_name, :publish_age, :publish_canton, :recall, :newsletter)
+      params.require(:letter).permit(:body, :name, :email, :age, :canton, :lang, :catalog, :publish_name, :publish_age, :publish_canton, :recall, :newsletter, :user_upload)
     end
 
     def set_nav_write

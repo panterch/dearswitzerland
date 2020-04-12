@@ -18,11 +18,13 @@
     <header class="pt-1">
         <nav>
             <ul>
-                <li class="<%= "active" if :write == @nav %>">
-                    <%= link_to t("nav.new_letter_path"), new_letter_path %>
-                </li>
+              <li class="<%= "active" if :write == @nav %>">
+                <%= link_to t("nav.new_letter_path"), new_letter_path %>
+              </li>
+              <li class="<%= "active" if :upload == @nav %>">
+                <%= link_to t("nav.upload_letter_path"), upload_letters_path %>
+              </li>
                 <li class="<%= "active" if :letters == @nav %>">
-
                     <%= link_to t("nav.letters_path"), letters_path %>
                 </li>
                 <li class="<%= "active" if :about == @nav %>">

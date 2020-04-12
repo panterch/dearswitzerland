@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   scope "/:locale" do
     resources :letters, param: :slug do
+      collection do
+        get "upload"
+      end
       member do
         get "thanks"
       end
