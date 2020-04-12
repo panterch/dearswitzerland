@@ -234,6 +234,21 @@ form#step2 {
   overflow: auto;
 }
 
+ul.filter_langs {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    flex: auto;
+  }
+  input[type=checkbox] {
+    position: relative;
+    vertical-align: middle;
+    bottom: 1px;
+  }
+}
+
 .thumbnail {
 
   float: left;

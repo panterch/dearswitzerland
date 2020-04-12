@@ -1,6 +1,4 @@
-<%= render "filter" %>
-
-<div class="gallery">
+<div class="gallery mt-2">
   <div class="letter">
     <%= @letter.body %>
   </div>
@@ -8,14 +6,14 @@
   <% if @letter.private? %>
     <p class="mt-1"><%= t("letters.show.private") %></p>
   <% end %>
-  <% if @letter.prev %>
+  <% if @prev %>
     <nav id="prev">
-      <%= link_to image_tag("right.svg"), @letter.prev %>
+      <%= link_to image_tag("right.svg"), letter_path(@prev, filter_langs: @filter_langs) %>
   <% end %>
   </nav>
   <nav id="next">
-    <% if @letter.next %>
-      <%= link_to image_tag("left.svg"), @letter.next %>
+    <% if @next %>
+      <%= link_to image_tag("left.svg"), letter_path(@next, filter_langs: @filter_langs) %>
     <% end %>
   </nav>
 </div>

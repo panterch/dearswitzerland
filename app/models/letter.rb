@@ -3,18 +3,18 @@ class Letter < ApplicationRecord
   before_create :set_slug
   enum status: [ :draft, :submitted ]
 
-  def self.public
-    self.submitted.where("catalog = true")
+  def self.public(filter_langs = [])
+    self.submitted.where("catalog = true").where(lang: filter_langs)
   end
 
-  def next
+  def next(filter_langs)
     return if private?
-    Letter.public.where("id > ?", id).order("id ASC").first
+    Letter.public(filter_langs).where("id > ?", id).order("id ASC").first
   end
 
-  def prev
+  def prev(filter_langs)
     return if private?
-    Letter.public.where("id < ?", id).order("id DESC").first
+    Letter.public(filter_langs).where("id < ?", id).order("id DESC").first
   end
 
   def to_param

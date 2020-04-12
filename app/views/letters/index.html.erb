@@ -1,12 +1,31 @@
-<%= render "filter" %>
+<h1 class="mt-3 mb-3">
+  <%= t("letters.index.title1") %>
+  <strong><%= t("letters.index.title2") %></strong>
+</h1>
 
-<div class="thumbnails" data-controller="thumbnails">
+<p><%= t("letters.index.hint") %></p>
+
+<div class="thumbnails mt-2" data-controller="thumbnails">
+
+  <p><%= t("letters.index.filter") %></p>
+
+  <ul class="filter_langs mb-2">
+    <% I18n.available_locales.map(&:to_s).each do |lang| %>
+      <li>
+        <label>
+          <%= check_box_tag "filter_langs[]", lang, @filter_langs.include?(lang), data: { action: "change->thumbnails#filter", target: "thumbnails.filterLang" } %>
+          <%= t(lang, scope: :locales) %>
+        </label>
+      </li>
+    <% end %>
+  </ul>
+
   <% @letters.each do |letter| %>
     <div class="thumbnail" data-action="click->thumbnails#open">
       <div class="letter">
         <%= letter.body %>
       </div>
-      <%= link_to letter.display_name, letter_path(letter) %>
+      <%= link_to letter.display_name, letter_path(letter, filter_langs: @filter_langs) %>
     </div>
   <% end %>
 </div>

@@ -63,6 +63,7 @@ en:
       title2: Letters
       hint: "This is a collection of the letters we’ve received so far.
         Feel free to read through the thoughts of other people in Switzerland."
+      filter: "Filter by language:"
 
   footer:
     address1: Viadukt 93 - 95

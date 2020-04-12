@@ -6,12 +6,16 @@ class LettersController < ApplicationController
   # GET /letters
   # GET /letters.json
   def index
-    @letters = Letter.public.with_rich_text_body.order("id DESC").limit(100)
+    @filter_langs = params[:filter_langs] || [ I18n.locale.to_s ]
+    @letters = Letter.public(@filter_langs).with_rich_text_body.order("id DESC").limit(100)
   end
 
   # GET /letters/1
   # GET /letters/1.json
   def show
+    @filter_langs = params[:filter_langs]
+    @prev = @letter.prev(@filter_langs)
+    @next = @letter.next(@filter_langs)
   end
 
   # GET /letters/new
