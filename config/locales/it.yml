@@ -1,2 +1,79 @@
 it:
-  hello: "Ciao"
+
+
+  locales:
+    en: Inglese
+    de: Tedesco
+    it: Italiano
+    rm: Lingua Romancia
+    fr: Francese
+
+  nav:
+    new_letter_path: scrivere
+    letters_path: lettera
+    about_path: a proposito
+    faq_path: FAQ
+
+  letters:
+    new:
+      title1: Carra
+      title2: Svizzera
+      question1: Cosa avete imparato dalla crisi del COVID-19?
+      question2: Quale cambiamento vorreste vedere durare ?
+      question3: O che vorreste condividere con una Svizzera futura?
+      subtitle: Condividetelo con noi - scrivendo una lettera.
+      default_body: "Cara Svizzera,"
+      submit: Inviare la lettera
+      online1: Volete scrivere in linea?
+      online2: Cominciate la redazione subito
+      offline1: Preferite scriverla con matita e carta?
+      offline2: Scaricare esemplare
+
+    edit:
+      title1: ci siete
+      title2: quasi
+      hint: "Siete pregati di riempire les informazioni seguenti per scegliere quali informazione condividere e per pubblicare la vostra lettera sul sito."
+      placeholder_name: Nome
+      label_publish_name: Autorizzo a pubblicare il mio nome
+      placeholder_email: "EMail*"
+      label_email: informazione non destinata alla pubblicazione, solo per verificazione d’identità
+      placeholder_age: Età
+      placeholder_canton: Cantone
+      label_publish_age: Autorizzo a pubblicare la mia età
+      label_publish_canton: Autorizzo a pubblicare il mio cantone
+      legend_consent: "Scegliere tutto quello che è giusto:"
+      label_catalog: "Desiderate che la vostra lettera sia pubblicata sul catalogo in linea e presa in considerazione per il libro ”Cara Svizzera”? "
+      label_recall: "Desiderate ricevere una copia del vostro mail tra un anno?"
+      label_newsletter: "Desiderate ricevere le newsletter a riguardo dell’iniziativa ”Cara Svizzera” ?"
+      required: "* obbligatorio"
+      submit: Inviare lettera
+
+    show:
+      private: Questa lettera è visibile solo da voi
+
+    thanks:
+      title1: Grazie
+      title2: Mille
+      subtitle: La vostra lettera è stata trasferita correttamente.
+      p1: Riceverete una conferma per mail tra qualche istante.
+      p2: "Se cambiate idea e desiderate rimuovere la vostra lettera, siete pregati di inviare una mail all’indirizzo: "
+
+    index:
+      title1: le
+      title2: Lettere
+      hint: "Queste sono le lettere che abbiamo ricevuto oggi.
+             Non esitate a leggere i pensiere e le riflessioni scritti dalle altre persone in Svizzera."
+
+  footer:
+    address1: Viadukt 93 - 95
+    address2: 8005 Zürich, Svizzera
+    versusvirus: "Un'iniziativa nata dal hackathon #versusvirus."
+
+  email:
+    thanks:
+      subject: Grazie!
+      title1: grazie
+      title2: Mille
+      p1: Grazie per aver condiviso i vostri pensieri e le vostre storie con “Cara Svizzera”.
+      p2: La vostra lettera sarà analizzata e pubblicata il più velocemente possibile.
+      share: Condividete la vostra lettera con i vostri amici.
