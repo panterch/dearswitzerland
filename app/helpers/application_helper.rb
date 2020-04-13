@@ -38,4 +38,12 @@ module ApplicationHelper
     cantons.insert(0, [t("letters.edit.placeholder_canton"),"", disabled: true, selected: canton.blank?])
   end
 
+  def letter_preview(letter, variant)
+    variants = {
+        thumbnail: "220x311",
+        gallery: "824"
+        # gallery: 1648
+    }
+    return image_tag letter.reviewed_pdf.preview(resize: variants[variant])
+  end
 end

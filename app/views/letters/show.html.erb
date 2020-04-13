@@ -1,14 +1,7 @@
 <div class="gallery mt-2">
-  <div class="letter">
-    <% if @letter.body.present? %>
-      <%= @letter.body %>
-    <% end %>
-    <% if @letter.user_upload.present? %>
-      <a class="button" href="<%= rails_blob_path(@letter.user_upload, disposition: "attachment") %>">
-        Download original letter
-      </a>
-    <% end %>
-  </div>
+
+  <%= render "show" %>
+
   <p class="mt-1"><%= @letter.display_name %></p>
   <% if @letter.private? %>
     <p class="mt-1"><%= t("letters.show.private") %></p>
