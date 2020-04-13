@@ -230,10 +230,13 @@ form#step2 {
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 824px;
-  min-height: 1132px;
-  padding: 12px;
+  min-height: 1164px;
   margin: auto;
   overflow: hidden;
+
+  .trix-content {
+    padding: 12px;
+  }
 
   h1 {
     color: $color-highlight;
@@ -262,9 +265,8 @@ form#step2 {
   }
   a.button {
     display: block;
-    margin: auto;
+    margin: 1em auto;
     width: 300px;
-    margin-top: 100px;
     text-align: center;
   }
 
@@ -314,6 +316,9 @@ ul.filter_langs {
     width: 220px;
     height: 311px;
     min-height: 311px;
+  }
+
+  .trix-content {
     padding: 5px;
   }
 

@@ -23,7 +23,12 @@
   <% @letters.each do |letter| %>
     <div class="thumbnail" data-action="click->thumbnails#open">
       <div class="letter">
-        <%= letter.body %>
+        <% if letter.body.present? %>
+          <%= letter.body %>
+        <% end %>
+        <% if letter.user_upload.present? %>
+          <%= letter_preview(letter, :thumbnail) %>
+        <% end %>
       </div>
       <%= link_to letter.display_name, letter_path(letter, filter_langs: @filter_langs) %>
     </div>

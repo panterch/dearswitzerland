@@ -12,15 +12,19 @@
       </a>
       <%= form.file_field :user_upload %>
 
+      <hr>
+
       <p class="mt-2">Reviewed letter (Please use PDF only in A4 format):</p>
       <% if @letter.reviewed_pdf.present? %>
         <a class="button" href="<%= rails_blob_path(@letter.reviewed_pdf, disposition: "attachment") %>">
           Download reviewed pdf
         </a>
-      <% end %>
+        <%= letter_preview(@letter, :thumbnail) %>
+  <% end %>
       <%= form.file_field :reviewed_pdf %>
-    <% end %>
+  <% end %>
 
+    <hr>
     <p class="mt-2">Only letters with state "accepted" are show on the website:</p>
     <%= form.select :status, Letter.statuses.keys %>
 

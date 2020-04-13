@@ -5,7 +5,7 @@ class LettersController < ApplicationController
 
   def index
     @filter_langs = params[:filter_langs] || [ I18n.locale.to_s ]
-    @letters = Letter.published(@filter_langs).with_rich_text_body.order("id DESC").limit(100)
+    @letters = Letter.published(@filter_langs).with_rich_text_body.with_attached_reviewed_pdf.order("id DESC").limit(100)
   end
 
   def show

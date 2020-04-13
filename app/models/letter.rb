@@ -25,7 +25,7 @@ class Letter < ApplicationRecord
   end
 
   def private?
-    !submitted? || !catalog?
+    !catalog?
   end
 
   def display_name
