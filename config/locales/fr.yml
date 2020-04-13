@@ -12,6 +12,7 @@ fr:
     letters_path: lettres
     about_path: à propos
     faq_path: FAQ
+    upload_letter_path: télécharger
 
   letters:
     new:
@@ -27,6 +28,10 @@ fr:
       online2: Commencez à la rédiger toute suite
       offline1: Vous préférez écrire au crayon et papier?
       offline2: Télécharger modèle
+
+    upload:
+      nofile: télécharger la lettre
+      hasfile: Merci!
 
     edit:
       title1: vous y êtes
