@@ -32,6 +32,7 @@ gem 'rails-i18n'
 gem "aws-sdk-s3", require: false
 gem "mini_magick"
 gem 'image_processing'
+gem "sentry-raven"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
