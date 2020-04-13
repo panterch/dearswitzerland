@@ -5,4 +5,23 @@
 
 <p><%= t("letters.edit.hint") %></p>
 
-<%= render "form", upload_field: true %>
+<%= form_with(model: @letter, local: true, id: "step2", class: "pt-2 pb-2") do |form| %>
+
+  <fieldset id="upload" data-controller="upload">
+    <div class="upload-btn-wrapper">
+      <button class="btn">
+          <span data-target="upload.nofile" class="button">
+            <%= t("letters.upload.nofile") %>
+          </span>
+        <span data-target="upload.hasfile" style="display: none;">
+            <%= t("letters.upload.hasfile") %>
+          </span>
+      </button>
+      <%= form.file_field :user_upload, data: {action: "change->upload#upload"} %>
+    </div>
+  </fieldset>
+
+  <%= render "personal_form", form: form %>
+
+
+<% end %>

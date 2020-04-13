@@ -1,0 +1,15 @@
+<div class="letter">
+  <% if @letter.body.present? %>
+    <%= @letter.body %>
+  <% end %>
+  <% if @letter.user_upload.present? %>
+    <a class="button" href="<%= rails_blob_path(@letter.user_upload, disposition: "attachment") %>">
+      Download original letter
+    </a>
+  <% end %>
+  <% if @letter.reviewed_pdf.present? %>
+    <a class="button" href="<%= rails_blob_path(@letter.reviewed_pdf, disposition: "attachment") %>">
+      Download reviewed letter
+    </a>
+  <% end %>
+</div>

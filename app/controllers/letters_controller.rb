@@ -3,28 +3,24 @@ class LettersController < ApplicationController
   before_action :set_nav_write, only: [:new, :edit, :thanks]
   before_action :set_nav_letters, only: [:index, :show]
 
-  # GET /letters
-  # GET /letters.json
   def index
     @filter_langs = params[:filter_langs] || [ I18n.locale.to_s ]
-    @letters = Letter.public(@filter_langs).with_rich_text_body.order("id DESC").limit(100)
+    @letters = Letter.published(@filter_langs).with_rich_text_body.order("id DESC").limit(100)
   end
 
-  # GET /letters/1
-  # GET /letters/1.json
   def show
     @filter_langs = params[:filter_langs]
     @prev = @letter.prev(@filter_langs)
     @next = @letter.next(@filter_langs)
   end
 
-  # GET /letters/new
+
   def new
     @letter = Letter.new
     @letter.body.body = Letter.default_body
   end
 
-  # GET /letters/1/edit
+
   def edit
   end
 
@@ -35,8 +31,7 @@ class LettersController < ApplicationController
     @letter.catalog = true
   end
 
-  # POST /letters
-  # POST /letters.json
+
   def create
     @letter = Letter.new(letter_params)
 
@@ -52,21 +47,20 @@ class LettersController < ApplicationController
     if @letter.user_upload.present?
       @letter.status = :submitted
       @letter.save!
-      ApplicationMailer.with(letter: @letter).thanks_email.deliver_later
+      ApplicationMailer.send_notifications(@letter)
       return redirect_to thanks_letter_url(@letter)
     end
     # should not be reached
     render :new
   end
 
-  # PATCH/PUT /letters/1
-  # PATCH/PUT /letters/1.json
+
   def update
     @letter.status = :submitted
 
     respond_to do |format|
       if @letter.update(letter_params)
-        ApplicationMailer.with(letter: @letter).thanks_email.deliver_later
+        ApplicationMailer.send_notifications(@letter)
         format.html { redirect_to thanks_letter_url(@letter) }
         format.json { render :show, status: :ok, location: @letter }
       else
@@ -80,8 +74,6 @@ class LettersController < ApplicationController
 
   end
 
-  # DELETE /letters/1
-  # DELETE /letters/1.json
   def destroy
     @letter.destroy
     respond_to do |format|
@@ -91,6 +83,7 @@ class LettersController < ApplicationController
   end
 
   private
+
     # Use callbacks to share common setup or constraints between actions.
     def set_letter
       @letter = Letter.find_by_slug(params[:slug])
@@ -98,6 +91,11 @@ class LettersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def letter_params
+      # make sure not to include here:
+      # - status
+      # - slug
+      # - token
+      # - id
       params.require(:letter).permit(:body, :name, :email, :age, :canton, :lang, :catalog, :publish_name, :publish_age, :publish_canton, :recall, :newsletter, :user_upload)
     end
 

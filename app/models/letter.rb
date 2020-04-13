@@ -1,22 +1,23 @@
 class Letter < ApplicationRecord
   has_rich_text :body
   has_one_attached :user_upload
+  has_one_attached :reviewed_pdf
 
-  before_create :set_slug
-  enum status: [ :draft, :submitted ]
+  before_create :set_secure_tokens
+  enum status: [ :draft, :submitted, :accepted, :declined ]
 
-  def self.public(filter_langs = [])
-    self.submitted.where("catalog = true").where(lang: filter_langs)
+  def self.published(filter_langs = [])
+    self.accepted.where("catalog = true").where(lang: filter_langs)
   end
 
   def next(filter_langs)
     return if private?
-    Letter.public(filter_langs).where("id > ?", id).order("id ASC").first
+    Letter.published(filter_langs).where("id > ?", id).order("id ASC").first
   end
 
   def prev(filter_langs)
     return if private?
-    Letter.public(filter_langs).where("id < ?", id).order("id DESC").first
+    Letter.published(filter_langs).where("id < ?", id).order("id DESC").first
   end
 
   def to_param
@@ -39,10 +40,14 @@ class Letter < ApplicationRecord
 
   private
 
-  def set_slug
+  def set_secure_tokens
     loop do
       self.slug = SecureRandom.uuid
       break unless Letter.where(slug: slug).exists?
+    end
+    loop do
+      self.token = SecureRandom.uuid
+      break unless Letter.where(slug: token).exists?
     end
   end
 

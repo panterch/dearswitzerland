@@ -8,4 +8,10 @@ class ApplicationMailerPreview < ActionMailer::Preview
       ApplicationMailer.with(letter: letter).thanks_email
     end
 
+    def review_email
+      letter = Letter.new(token: "abcde")
+      ApplicationMailer.with(letter: letter).review_email
+    end
+
+
 end
