@@ -44,6 +44,7 @@ module ApplicationHelper
         gallery: "824"
         # gallery: 1648
     }
+    return unless letter.reviewed_pdf.present?
     return unless letter.reviewed_pdf.previewable?
     return image_tag letter.reviewed_pdf.preview(resize: variants[variant])
   end
