@@ -14,7 +14,7 @@ class ApplicationMailer < ActionMailer::Base
 
   def review_email
     @letter = params[:letter]
-    mail(to: 'app@dearswitzerland.org', subject: '[Dearswitzerland] New letter to review')
+    mail(to: 'app@dearswitzerland.org', subject: "[Dearswitzerland] ["+@letter.lang+"] New letter to review")
   end
 
   def thanks_email
