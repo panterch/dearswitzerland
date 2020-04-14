@@ -4,7 +4,7 @@
 
 * Ruby version: specified in .ruby-version
 * Node version: specified in .nvmrc
-* System dependencies: PostgreSQL database
+* System dependencies: PostgreSQL database, imagemagick, poppler-utils
 
 ## Installation
 
