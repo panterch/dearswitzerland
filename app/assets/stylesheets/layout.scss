@@ -99,6 +99,24 @@ input[type=submit], a.button, span.button {
   }
 }
 
+a.button.nofunction, span.button.nofunction {
+  cursor: default;
+  background-color: #000;
+  color: #FFF;
+  font-size: 18px;
+  padding: 18px;
+  line-height: 18px;
+  border: 0px;
+  font-weight: bold;
+  transition: none;
+
+  &:hover {
+    background-color: #000;
+    text-decoration: none;
+  }
+}
+
+
 a.button, span.button {
   cursor: pointer;
   display: inline-block;
