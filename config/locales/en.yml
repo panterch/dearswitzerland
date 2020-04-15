@@ -31,6 +31,8 @@ en:
       offline2: Download template
 
     upload:
+      title1: upload your
+      title2: letter
       nofile: upload your letter
       hasfile: Thanks!
 
