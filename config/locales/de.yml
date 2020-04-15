@@ -29,6 +29,8 @@ de:
       offline2: Lade die Briefvorlage runter.
 
     upload:
+      title1: brief
+      title2: Hochladen
       nofile: Brief hochladen
       hasfile: Danke!
 

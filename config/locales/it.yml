@@ -31,6 +31,8 @@ it:
       offline2: Scaricare esemplare
 
     upload:
+      title1: sottomettere
+      title2: La lettera
       nofile: Sottomettere la lettera
       hasfile: Grazie!
 
