@@ -35,7 +35,7 @@ de:
     edit:
       title1: fast
       title2: geschafft
-      hint: "Wir brauchen noch ein Paar Angaben, damit wir den Brief hochladen können. Und bitte gib uns an, welche Informationen du über dich veröffentlicht haben möchtest."
+      hint: "Wir brauchen noch ein Paar Angaben, damit wir den Brief hochladen können. Und bitte gib uns an, welche Informationen du über dich veröffentlicht möchtest."
       placeholder_name: Dein Name
       label_publish_name: Ich stimme zu, dass mein Name veröffentlicht wird.
       placeholder_email: "EMail*"
@@ -45,7 +45,7 @@ de:
       label_publish_age: Ich stimme zu, dass mein Alter veröffentlicht wird.
       label_publish_canton: Ich stimme zu, dass mein Wohnkanton veröffentlicht wird.
       legend_consent: "Wähle alle zutreffenden Antworten aus:"
-      label_catalog: "Stimmst du zu, deinen Brief im Online Katalog zu veröffentlichen und dass er für das Buch “Liäbi Schwiiz” berücksichtigt wird? ?"
+      label_catalog: "Stimmst du zu, deinen Brief im Online Katalog zu veröffentlichen und dass er für das Buch “Liäbi Schwiiz” berücksichtigt wird?"
       label_recall: "Möchtest du in einem Jahr eine Kopie deines Briefes via Email erhalten?"
       label_newsletter: "Möchtest du per Email über unsere Initiative auf dem Laufenden gehalten werden?"
       required: "* erforderlich"
@@ -71,7 +71,7 @@ de:
   footer:
     address1: Viadukt 93 - 95
     address2: 8005 Zürich, Schweiz
-    versusvirus: "Liäbi Schweiz ist eine Initiative, die aus dem #versusvirus Hackathon geboren wurde."
+    versusvirus: "Liäbi Schweiz ist eine Initiative, die aus dem #versusvirus Hackathon entstanden ist."
 
   email:
     thanks:
