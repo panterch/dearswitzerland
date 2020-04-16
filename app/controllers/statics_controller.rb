@@ -8,5 +8,7 @@ class StaticsController < ApplicationController
     @nav = :faq
   end
 
+  def privacy
+  end
 
 end
