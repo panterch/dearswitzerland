@@ -30,6 +30,8 @@ fr:
       offline2: Télécharger modèle
 
     upload:
+      title1: soumets ta
+      title2: Lettre
       nofile: télécharger la lettre
       hasfile: Merci!
 
