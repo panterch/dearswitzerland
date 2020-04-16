@@ -15,6 +15,11 @@ en:
     faq_path: FAQ
     upload_letter_path: upload
 
+  canton:
+    abroad: "Swiss Citizen Abroad"
+    other: "Other Connection to Switzerland"
+
+
   letters:
     new:
       title1: Dear
@@ -54,6 +59,7 @@ en:
       label_newsletter: "Do you want to receive email updates about the Dear Switzerland initiative?"
       required: "* required"
       submit: Submit your letter
+
 
     show:
       private: This letter is only visible for you.
