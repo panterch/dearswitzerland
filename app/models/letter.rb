@@ -6,8 +6,10 @@ class Letter < ApplicationRecord
   before_create :set_secure_tokens
   enum status: [ :draft, :submitted, :accepted, :declined ]
 
-  def self.published(filter_langs = [])
-    self.accepted.where("catalog = true").where(lang: filter_langs)
+  def self.published(filter_langs)
+    scope = self.accepted.where("catalog = true")
+    return scope unless filter_langs.present?
+    scope.where(lang: filter_langs)
   end
 
   def next(filter_langs)

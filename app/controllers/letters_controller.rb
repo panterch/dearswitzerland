@@ -4,7 +4,7 @@ class LettersController < ApplicationController
   before_action :set_nav_letters, only: [:index, :show]
 
   def index
-    @filter_langs = params[:filter_langs] || I18n.available_locales.map(&:to_s)
+    @filter_langs = params[:filter_langs] || []
     @letters = Letter.published(@filter_langs).with_rich_text_body.with_attached_reviewed_pdf.order("id DESC").limit(100)
   end
 
