@@ -15,6 +15,10 @@ it:
     faq_path: FAQ
     upload_letter_path: sottomettere
 
+  canton:
+    abroad: "Svizzera all'estero"
+    other: "Altro link verso la Svizzera"
+
   letters:
     new:
       title1: Carra
@@ -75,6 +79,7 @@ it:
   footer:
     address1: Viadukt 93 - 95
     address2: 8005 Zürich, Svizzera
+    privacy: Informativa sulla privacy
     versusvirus: "Un'iniziativa nata dal hackathon #versusvirus."
 
   email:
