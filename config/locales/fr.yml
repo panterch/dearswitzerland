@@ -14,6 +14,10 @@ fr:
     faq_path: FAQ
     upload_letter_path: télécharger
 
+    canton:
+      abroad: "Suisse à l'étranger"
+      other: "Autre lien à la suisse"
+
   letters:
     new:
       title1: Chère
@@ -74,6 +78,7 @@ fr:
   footer:
     address1: Viadukt 93 - 95
     address2: 8005 Zürich, Suisse
+    privacy: Avis de confidentialité
     versusvirus: "Une initiative issue du hackathon #versusvirus."
 
   email:
