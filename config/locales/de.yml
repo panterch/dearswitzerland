@@ -13,6 +13,10 @@ de:
     faq_path: FAQ
     upload_letter_path: hochladen
 
+  canton:
+    abroad: "Auslandschweizer/in"
+    other: "Anderer Bezug zur Schweiz"
+
   letters:
     new:
       title1: Liäbi
@@ -73,6 +77,7 @@ de:
   footer:
     address1: Viadukt 93 - 95
     address2: 8005 Zürich, Schweiz
+    privacy: Datenschutzerklärung
     versusvirus: "Liäbi Schweiz ist eine Initiative, die aus dem #versusvirus Hackathon entstanden ist."
 
   email:
