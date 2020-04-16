@@ -40,21 +40,22 @@ module ApplicationHelper
     cantons.insert(0, [t("letters.edit.placeholder_canton"),"", disabled: true, selected: canton.blank?])
   end
 
+  VARIANTS = {
+      thumbnail: "220x311",
+      gallery: "824"
+  }.freeze
+
   def instagram_preview(letter)
     if (letter.reviewed_pdf.present? && letter.reviewed_pdf.previewable?)
-      return url_for(letter.reviewed_pdf.preview(resize: "1080x1080"))
+      return url_for(letter.reviewed_pdf.preview(resize: VARIANTS[:gallery]))
     else
       return image_url("instagram.#{@letter.lang}.png")
     end
   end
 
-    def letter_preview(letter, variant)
-    variants = {
-        thumbnail: "220x311",
-        gallery: "824"
-    }
+  def letter_preview(letter, variant)
     return unless letter.reviewed_pdf.present?
     return unless letter.reviewed_pdf.previewable?
-    return image_tag letter.reviewed_pdf.preview(resize: variants[variant])
+    return image_tag letter.reviewed_pdf.preview(resize: VARIANTS[variant])
   end
 end
