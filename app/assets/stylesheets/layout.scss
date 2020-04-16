@@ -92,7 +92,7 @@ input[type=submit], a.button, span.button {
   border: 0px;
   font-weight: bold;
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  
+
   &:hover {
     background-color: #666666;
     text-decoration: none;
@@ -240,6 +240,11 @@ form#step2 {
     bottom: 30px;
     right: 110px;
   }
+
+  trix-editor {
+    // don't let "submit letter" button overlap long texts when writing
+    padding-bottom: 85px;
+  }
 }
 
 .letter {
@@ -286,6 +291,12 @@ form#step2 {
     margin: 1em auto;
     width: 300px;
     text-align: center;
+  }
+  .share {
+    a {
+      display: inline-block;
+      padding: 1em;
+    }
   }
 
 }
@@ -360,10 +371,11 @@ footer {
   text-align: center;
   background-color: #ffffff;
   line-height: 1.2;
-  img.icon {
+  a.icon, a.icon img {
     width: 46px;
+    text-decoration: none;
   }
-  address, p {  
+  address, p {
     font-size: 15px;
   }
 

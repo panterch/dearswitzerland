@@ -3,80 +3,92 @@
 
 <head>
 
+  <% if content_for?(:seo) %>
+    <%= yield(:seo) %>
+  <% else %>
     <%= render partial: "/layouts/seo" %>
+  <% end %>
 
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-    <link rel="manifest" href="/site.webmanifest">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+  <link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body>
 
-    <header class="pt-1">
-        <nav>
-            <ul>
-              <li class="<%= "active" if :write == @nav %>">
-                <%= link_to t("nav.new_letter_path"), new_letter_path %>
-              </li>
-              <li class="<%= "active" if :upload == @nav %>">
-                <%= link_to t("nav.upload_letter_path"), upload_letters_path %>
-              </li>
-                <li class="<%= "active" if :letters == @nav %>">
-                    <%= link_to t("nav.letters_path"), letters_path %>
-                </li>
-                <li class="<%= "active" if :about == @nav %>">
-                    <%= link_to t("nav.about_path"), about_path %>
-                </li>
-                <li class="<%= "active" if :faq == @nav %>">
-                    <%= link_to t("nav.faq_path"), faq_path %>
-                </li>
-            </ul>
+<header class="pt-1">
+  <nav>
+    <ul>
+      <li class="<%= "active" if :write == @nav %>">
+        <%= link_to t("nav.new_letter_path"), new_letter_path %>
+      </li>
+      <li class="<%= "active" if :upload == @nav %>">
+        <%= link_to t("nav.upload_letter_path"), upload_letters_path %>
+      </li>
+      <li class="<%= "active" if :letters == @nav %>">
+        <%= link_to t("nav.letters_path"), letters_path %>
+      </li>
+      <li class="<%= "active" if :about == @nav %>">
+        <%= link_to t("nav.about_path"), about_path %>
+      </li>
+      <li class="<%= "active" if :faq == @nav %>">
+        <%= link_to t("nav.faq_path"), faq_path %>
+      </li>
+    </ul>
 
-            <ul id="locales">
-                <% I18n.available_locales.each do |locale| %>
-                <li class="<%= "active" if I18n.locale == locale %>">
-                    <%= link_to locale.to_s.upcase, locale: locale %>
-                </li>
-                <% end %>
-            </ul>
-        </nav>
-    </header>
+    <ul id="locales">
+      <% I18n.available_locales.each do |locale| %>
+        <li class="<%= "active" if I18n.locale == locale %>">
+          <%= link_to locale.to_s.upcase, locale: locale %>
+        </li>
+      <% end %>
+    </ul>
+  </nav>
+</header>
 
-    <main>
-        <%= yield %>
-    </main>
+<main>
+  <%= yield %>
+</main>
 
-    <%= image_tag "logo.svg", id: :logo %>
+<%= image_tag "logo.svg", id: :logo %>
 
-    <footer class="pt-2 pb-2">
-        <a href="https://instagram.com/dear.switzerland" target="_blank">
-            <%= image_tag "instagram-light.svg", class: :icon %>
-        </a>
-        <address class="mt-3">
-            <%= t("footer.address1") %><br>
-            <%= t("footer.address2") %><br>
-        </address>
-        <p><%= mail_to "info@dearswitzerland.org" %></p>
-        <p><%= link_to t("footer.privacy"), privacy_path %></p>
-        <p><%= t("footer.versusvirus") %></p>
-    </footer>
+<footer class="pt-2 pb-2" data-action="click->application#logoclick">
+  <a href="https://instagram.com/dear.switzerland" target="_blank" class="icon">
+    <%= image_tag "instagram-light.svg" %>
+  </a>
+  <a href="https://www.facebook.com/Dear-Switzerland-103540081329743" target="_blank" class="icon">
+    <%= image_tag "facebook-light.svg" %>
+  </a>
+  <a href="https://linkedin.com/company/dearswitzerland" target="_blank" class="icon">
+    <%= image_tag "linkedin-light.svg" %>
+  </a>
+  <address class="mt-3">
+    <%= t("footer.address1") %><br>
+    <%= t("footer.address2") %><br>
+  </address>
+  <p><%= mail_to "info@dearswitzerland.org" %></p>
+  <p><%= link_to t("footer.privacy"), privacy_path %></p>
+  <p><%= t("footer.versusvirus") %></p>
+</footer>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163371515-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163371515-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
 
-        gtag('config', 'UA-163371515-1');
-    </script>
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-163371515-1');
+</script>
 
 </body>
 

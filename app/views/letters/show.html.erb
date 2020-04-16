@@ -1,3 +1,14 @@
+<% content_for :seo do %>
+  <title>Dear Switzerland - Letter <%= @letter.display_name %></title>
+  <meta name="Description" CONTENT="Letter <%= @letter.display_name %> to Switzerland's future ">
+  <meta property="og:title" content="Dear Switzerland - <%= @letter.display_name %>"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="<%= request.original_url %>"/>
+  <meta property="og:image" content="<%= og_image(@letter) %>"/>
+  <meta property="og:description" content="Dear Switzerland - a venue to write a letter to Switzerland's future."/>
+  <meta property="og:site_name" content="Dear Switzerland"/>
+<% end %>
+
 <div class="gallery mt-2">
 
   <%= render "show" %>
@@ -6,6 +17,19 @@
   <% if @letter.private? %>
     <p class="mt-1"><%= t("letters.show.private") %></p>
   <% end %>
+
+  <div class="share mt-1 mb-3">
+    <a href="https://www.facebook.com/sharer/sharer.php?u=<%= url_encode(request.original_url) %>" target="_blank">
+      <%= image_tag "facebook.svg" %>
+    </a>
+    <a href="https://twitter.com/share?url=<%= url_encode(request.original_url) %>" target="_blank">
+      <%= image_tag "twitter.svg" %>
+    </a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=<%= url_encode(request.original_url) %>" target="_blank">
+      <%= image_tag "linkedin.svg" %>
+    </a>
+  </div>
+
   <% if @prev %>
     <nav id="prev">
       <%= link_to image_tag("right.svg"), letter_path(@prev, filter_langs: @filter_langs) %>
@@ -17,3 +41,4 @@
     <% end %>
   </nav>
 </div>
+
