@@ -45,9 +45,9 @@ module ApplicationHelper
       gallery: "824"
   }.freeze
 
-  def instagram_preview(letter)
+  def og_image(letter)
     if (letter.reviewed_pdf.present? && letter.reviewed_pdf.previewable?)
-      return url_for(letter.reviewed_pdf.preview(resize: VARIANTS[:gallery]))
+      return url_for(letter.reviewed_pdf.preview(resize: VARIANTS[:thumbnail]))
     else
       return image_url("instagram.#{@letter.lang}.png")
     end
