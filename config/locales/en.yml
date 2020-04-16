@@ -15,6 +15,11 @@ en:
     faq_path: FAQ
     upload_letter_path: upload
 
+  canton:
+    abroad: "Swiss Citizen Abroad"
+    other: "Other Connection to Switzerland"
+
+
   letters:
     new:
       title1: Dear
@@ -55,6 +60,7 @@ en:
       required: "* required"
       submit: Submit your letter
 
+
     show:
       private: This letter is only visible for you.
 
@@ -75,6 +81,7 @@ en:
   footer:
     address1: Viadukt 93 - 95
     address2: 8005 Zürich, Switzerland
+    privacy: Privacy Policy
     versusvirus: "An initiaive out of the #versusvirus hackathon."
   
   email:

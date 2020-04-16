@@ -33,8 +33,10 @@ module ApplicationHelper
         ["Valais / Wallis", "VS"],
         ["Neuchâtel", "NE"],
         ["Genève", "GE"],
-        ["Jura", "JU"]
+        ["Jura", "JU"],
     ].sort_by(&:first)
+    cantons.append [t("canton.abroad"), :abroad]
+    cantons.append [t("canton.other"), :other]
     cantons.insert(0, [t("letters.edit.placeholder_canton"),"", disabled: true, selected: canton.blank?])
   end
 

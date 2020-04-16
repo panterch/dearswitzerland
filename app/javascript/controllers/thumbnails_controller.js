@@ -4,7 +4,7 @@ export default class extends Controller {
   static targets = [ "filterLang" ]
 
   filter(event) {
-    let params = [ "filter_langs[]=none" ]
+    let params = [ ]
     this.filterLangTargets.forEach(function(filterLang) {
       filterLang.disabled = true
       if (!filterLang.checked) return
