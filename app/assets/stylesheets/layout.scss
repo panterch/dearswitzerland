@@ -30,6 +30,7 @@ header nav {
 
   ul#locales {
     margin-left: 100px;
+    margin-right: 20px;
   }
 
   li {
@@ -51,10 +52,10 @@ header nav {
 
 #logo {
   position: absolute;
-  left: 30px;
-  top: 15px;
-  height: 210px;
-  width: 210px;
+  left: 50px;
+  top: 30px;
+  height: 180px;
+  width: 180px;
   z-index: -1;
 }
 
@@ -253,7 +254,7 @@ form#step2 {
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 824px;
-  min-height: 1164px;
+  min-height: 764px;
   margin: auto;
   overflow: hidden;
 
