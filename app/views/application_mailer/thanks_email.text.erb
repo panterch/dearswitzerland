@@ -4,5 +4,8 @@
 
 <%= I18n.t("email.thanks.p2") %>
 
+<% if @letter.body.present? %>
+
 <%= t("email.thanks.share") %>: <%= letter_url(@letter, locale: I18n.locale) %>
 
+<% end %>

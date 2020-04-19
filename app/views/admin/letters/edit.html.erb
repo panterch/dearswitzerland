@@ -2,7 +2,7 @@
   <%= render "/letters/show" %>
 <% end %>
 
-<%= form_with(model: @letter, url: admin_letter_path(@letter.token), local: true, id: "step2", class: "pt-2 pb-2") do |form| %>
+<%= form_with(model: @letter, url: admin_letter_path(@letter.token), local: true, class: "pt-2 pb-2") do |form| %>
 
   <fieldset id="admin">
     <% if @letter.user_upload.present? %>

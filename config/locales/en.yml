@@ -24,6 +24,8 @@ en:
     new:
       title1: Dear
       title2: Switzerland
+      intro: "With this platform we invite you to share your reflections and experiences about the crisis, as well as your hopes and ideas for Switzerland’s post COVID-19 future. We believe that capturing the collective wisdom and creativity of the Swiss population is the key to shaping all that lies ahead. Our goal is to gather 1000 letters: Let’s write our way to a transformed future for Switzerland."
+      questions: "Here are some inspirational questions:"
       question1: What did you learn from the Covid-19 crisis?
       question2: What has changed that you hope will continue?
       question3: Or what do you want to share with the future Switzerland?
@@ -31,7 +33,7 @@ en:
       default_body: "Dear Switzerland,"
       submit: Send letter
       online1: Like to do it online?
-      online2: Start writing right away
+      online2: Start writing here
       offline1: Prefer pen and paper?
       offline2: Download template
 

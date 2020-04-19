@@ -7,8 +7,3 @@
   <% end %>
 </div>
 
-<% if @letter.reviewed_pdf.present? %>
-  <a class="button" href="<%= rails_blob_path(@letter.reviewed_pdf, disposition: "attachment") %>">
-    Download full letter as PDF
-  </a>
-<% end %>

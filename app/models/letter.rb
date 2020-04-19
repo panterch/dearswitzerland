@@ -23,11 +23,11 @@ class Letter < ApplicationRecord
   end
 
   def to_param
-    slug
+    self.slug
   end
 
   def private?
-    !catalog?
+    self.catalog? && self.submitted?
   end
 
   def display_name
