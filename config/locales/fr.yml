@@ -30,23 +30,23 @@ fr:
       submit: Envoyer lettre
       online1: Vous voulez l’écrire en ligne?
       online2: Commencez à la rédiger toute suite
-      offline1: Vous préférez écrire au crayon et papier?
+      offline1: Ou plutôt au crayon et sur papier?
       offline2: Télécharger modèle
 
     upload:
-      title1: soumets ta
-      title2: Lettre
+      title1: soumettre
+      title2: La lettre
       nofile: télécharger la lettre
       hasfile: Merci!
 
     edit:
       title1: vous y êtes
       title2: presque
-      hint: "Veuillez remplir les champs ci-dessous pour choisir les informations que vous voulez publier et qu’on puisse afficher votre lettre sur le site."
+      hint: "Veuillez remplir les champs ci-dessous et choissisez les informations que vous acceptez de voir publiées pour que l’on puisse afficher votre lettre sur le site."
       placeholder_name: Prénom
       label_publish_name: J’autorise à publier mon prénom
-      placeholder_email: "EMail*"
-      label_email: information non destiné à la publication, à but de vérification seulement
+      placeholder_email: "E-mail*"
+      label_email: Information pour but de vérification uniquement
       placeholder_age: Âge
       placeholder_canton: Canton
       label_publish_age: J’autorise à publier mon âge
@@ -54,9 +54,9 @@ fr:
       legend_consent: "Choisissez tout ce qui est valable:"
       label_catalog: "Voulez-vous que votre lettre soit publiée sur le catalogue en ligne et considérée pour le livre ”Chère Suisse”? ?"
       label_recall: "Voulez-vous recevoir une copie de votre mail dans un an ? "
-      label_newsletter: "Voulez-vous recevoir des newsletters concernant l’initiative ”Chère Suisse” ?"
+      label_newsletter: "Voulez-vous recevoir des newsletters concernant l’initiative ”Chère Suisse”?"
       required: "* requis"
-      submit: Envoyer lettre
+      submit: Envoyer ma lettre
 
     show:
       private: Cette lettre n’est visible qu’à vous.
@@ -69,14 +69,14 @@ fr:
       p2: "Si vous changez d’avis et souhaitez retirer votre lettre, veuillez nous envoyez un e-mail correspondant à:"
 
     index:
-      title1: les
+      title1: vos
       title2: Lettres
-      hint: "Ceci est une collection de lettres qu’on a reçu au jour d’aujourd’hui.
-        N’hésitez pas à parcourir les pensées et réflexions écrites par d'autres personnes en Suisse."
+      hint: "Ceci est une collection de lettres qu’on a reçu à ce jour.
+        N’hésitez pas à parcourir les pensées et réflexions écrites par la communauté Suisse."
       filter: "Trier par langue:"
 
   footer:
-    address1: Viadukt 93 - 95
+    address1: Reverse ag c/o Impact Hub, Viadukt 93 - 95
     address2: 8005 Zürich, Suisse
     privacy: Avis de confidentialité
     versusvirus: "Une initiative issue du hackathon #versusvirus."
