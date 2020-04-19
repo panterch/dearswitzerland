@@ -13,9 +13,27 @@
 
   <%= render "show" %>
 
+  <% if @prev %>
+    <nav id="prev">
+      <%= link_to image_tag("right.svg"), letter_path(@prev, filter_langs: @filter_langs) %>
+    </nav>
+  <% end %>
+
+  <% if @next %>
+    <nav id="next">
+      <%= link_to image_tag("left.svg"), letter_path(@next, filter_langs: @filter_langs) %>
+    </nav>
+  <% end %>
+
   <p class="mt-1"><%= @letter.display_name %></p>
   <% if @letter.private? %>
     <p class="mt-1"><%= t("letters.show.private") %></p>
+  <% end %>
+
+  <% if @letter.reviewed_pdf.present? %>
+    <a class="button" href="<%= rails_blob_path(@letter.reviewed_pdf, disposition: "attachment") %>">
+      Download full letter as PDF
+    </a>
   <% end %>
 
   <div class="share mt-1 mb-3">
@@ -30,15 +48,6 @@
     </a>
   </div>
 
-  <% if @prev %>
-    <nav id="prev">
-      <%= link_to image_tag("right.svg"), letter_path(@prev, filter_langs: @filter_langs) %>
-  <% end %>
-  </nav>
-  <nav id="next">
-    <% if @next %>
-      <%= link_to image_tag("left.svg"), letter_path(@next, filter_langs: @filter_langs) %>
-    <% end %>
-  </nav>
+
 </div>
 

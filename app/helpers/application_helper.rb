@@ -41,7 +41,7 @@ module ApplicationHelper
   end
 
   VARIANTS = {
-      thumbnail: "220x311",
+      thumbnail: "440x622",
       gallery: "824"
   }.freeze
 

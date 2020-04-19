@@ -2,9 +2,11 @@ $color-highlight: #FF3311;
 $color-background: #fef9f2;
 $color-normal: #1c1a2a;
 
-a, a:visited, a:hover {
-  color: inherit;
-}
+
+/**
+ * site layout
+ */
+
 
 body {
   background-color: $color-background;
@@ -13,68 +15,139 @@ body {
 
 body, p, ol, ul, td {
   font-family: 'Poppins', sans-serif;
-  font-size: 25px;
-  line-height: 38px;
+  font-size: 13px;
+  line-height: 20px;
 }
 
-
-header nav {
-  text-align: right;
-
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
+@for $i from 1 through 5 {
+  #{".mt-"+$i} {
+    margin-top: #{$i+"em"};
   }
-
-  ul#locales {
-    margin-left: 100px;
-    margin-right: 20px;
+  #{".mb-"+$i} {
+    margin-bottom: #{$i+"em"};
   }
-
-  li {
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: 20px;
-    padding-right: 10px;
+  #{".pt-"+$i} {
+    padding-top: #{$i+"em"};
   }
-
-  li.active {
-    color: $color-highlight;
-    font-weight: bold;
-  }
-  a:hover {
-    color: $color-highlight;
-    text-decoration: none;
+  #{".pb-"+$i} {
+    padding-bottom: #{$i+"em"};
   }
 }
 
-#logo {
-  position: absolute;
-  left: 50px;
-  top: 30px;
-  height: 180px;
-  width: 180px;
-  z-index: -1;
+.mobile {
+  display: inherit;
+}
+
+.desktop {
+  display: none;
+}
+
+
+header {
+
+  height: 45px;
+
+  .control {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+  }
+
+  nav {
+
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: $color-background;
+
+    a:hover {
+      color: $color-highlight;
+      text-decoration: none;
+    }
+
+    ul {
+      padding-top: 1em;
+      list-style-type: none;
+      display: block;
+      font-weight: bolder;
+      font-size: 30px;
+
+      li {
+        margin-top: 1.5em;
+        margin-left: 5px;
+        text-transform: uppercase;
+      }
+    }
+
+    ul#locales {
+      li {
+        font-weight: normal;
+        display: inline-block;
+        font-size: 15px;
+        margin-top: 0;
+        padding-right: 2em;
+      }
+    }
+
+    li.active {
+      color: $color-highlight;
+      font-weight: bold;
+    }
+  }
 }
 
 main {
   text-align: center;
-  width: 960px;
-  min-height: 600px;
+  width: 98%;
+  min-height: 80vh;
   margin: auto;
+}
+
+#logo {
+  position: absolute;
+  z-index: -1;
+  left: 10px;
+  top: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+footer {
+  text-align: center;
+  background-color: #ffffff;
+  line-height: 1.2;
+
+  a.icon, a.icon img {
+    width: 46px;
+    text-decoration: none;
+  }
+
+  address, p {
+    font-size: 13px;
+  }
+
+}
+
+/**
+ * Generic styles and typo
+ */
+
+a, a:visited, a:hover {
+  color: inherit;
 }
 
 h1 {
   font-weight: bolder;
   text-decoration: underline;
-  font-size: 40px;
+  font-size: 25px;
   text-transform: uppercase;
   line-height: 0.9;
 
   strong {
-    font-size: 90px;
+    font-size: 50px;
     text-transform: none;
   }
 
@@ -84,12 +157,22 @@ h1 {
   }
 }
 
+h2 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/**
+ * Button component
+ */
+
+
 input[type=submit], a.button, span.button {
   background-color: #000;
   color: #FFF;
-  font-size: 18px;
-  padding: 18px;
-  line-height: 18px;
+  font-size: 12px;
+  padding: 12px;
+  line-height: 12px;
   border: 0px;
   font-weight: bold;
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
@@ -100,27 +183,19 @@ input[type=submit], a.button, span.button {
   }
 }
 
+a.button, span.button {
+  cursor: pointer;
+  display: inline-block;
+}
+
 a.button.nofunction, span.button.nofunction {
   cursor: default;
-  background-color: #000;
-  color: #FFF;
-  font-size: 18px;
-  padding: 18px;
-  line-height: 18px;
-  border: 0px;
-  font-weight: bold;
   transition: none;
 
   &:hover {
     background-color: #000;
     text-decoration: none;
   }
-}
-
-
-a.button, span.button {
-  cursor: pointer;
-  display: inline-block;
 }
 
 .upload-btn-wrapper {
@@ -142,8 +217,6 @@ a.button, span.button {
   }
 }
 
-
-
 .upload-btn-wrapper input[type=file] {
   font-size: 120px;
   position: absolute;
@@ -153,113 +226,21 @@ a.button, span.button {
   opacity: 0;
 }
 
-
-@for $i from 1 through 5 {
-  #{".mt-"+$i} {
-    margin-top: #{$i+"em"};
-  }
-  #{".mb-"+$i} {
-    margin-bottom: #{$i+"em"};
-  }
-  #{".pt-"+$i} {
-    padding-top: #{$i+"em"};
-  }
-  #{".pb-"+$i} {
-    padding-bottom: #{$i+"em"};
-  }
-}
-
-#new_controls {
-  overflow: auto;
-  .offline, .online {
-    float: left;
-    width: 50%;
-  }
-}
-
-form#step2 {
-  text-align: left;
-
-  input[type=text], input[type=email], select {
-    width: 100%;
-    height: 40px;
-    font-size: 15px;
-    margin-top: 2em;
-    border: 1px solid #000000;
-    padding-left: 0.5em;
-  }
-
-  input[type=checkbox] {
-    position: relative;
-    vertical-align: middle;
-    top: 2px;
-  }
-
-  fieldset#personal, fieldset#upload, fieldset#admin {
-    width: 500px;
-    margin: auto;
-  }
-
-  fieldset#personal {
-    label {
-      display: inline;
-      font-size: 15px;
-      margin: 0;
-    }
-
-    p {
-      font-size: 18px;
-    }
-
-  }
-
-  fieldset#consent {
-    input[type=checkbox] {
-      position: relative;
-      vertical-align: top;
-      top: 10px;
-      width: 30px;
-    }
-
-    label {
-      display: inline-block;
-      width: 920px;
-    }
-
-  }
-}
-
-.trix {
-  position: relative;
-
-  trix-toolbar {
-    display: none;
-  }
-
-  input[type=submit] {
-    position: absolute;
-    bottom: 30px;
-    right: 110px;
-  }
-
-  trix-editor {
-    // don't let "submit letter" button overlap long texts when writing
-    padding-bottom: 85px;
-  }
-}
+/**
+ * letter components
+ */
 
 .letter {
   text-align: left;
-  font-size: 20px;
+  font-size: 14px;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  width: 824px;
-  min-height: 764px;
   margin: auto;
   overflow: hidden;
+  min-height: 70vh;
 
   .trix-content {
-    padding: 12px;
+    padding: 10px;
   }
 
   h1 {
@@ -269,118 +250,458 @@ form#step2 {
     text-transform: none;
     padding-bottom: 1em;
     padding-top: 1em;
-    font-size: 24px;
-  }
-
-
-}
-
-.gallery {
-  position: relative;
-  nav {
-    position: absolute;
-    top: 500px;
-  }
-  nav#prev {
-    right: 0px;
-  }
-  nav#next {
-    left: 0px;
-  }
-  a.button {
-    display: block;
-    margin: 1em auto;
-    width: 300px;
-    text-align: center;
-  }
-  .share {
-    a {
-      display: inline-block;
-      padding: 1em;
-    }
-  }
-
-}
-
-.thumbnails {
-  overflow: auto;
-}
-
-ul.filter_langs {
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-
-  li {
-    flex: auto;
-  }
-  input[type=checkbox] {
-    position: relative;
-    vertical-align: middle;
-    bottom: 1px;
-  }
-}
-
-.thumbnail {
-
-  float: left;
-  width: 240px;
-  padding: 10px;
-  cursor: zoom-in;
-
-  a, a:hover {
-    text-decoration: none;
-    cursor: zoom-in;
-    font-size: 12px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 100%;
-    display: inline-block;
-  }
-
-  .letter {
-    position: relative;
-    font-size: 12px;
-    text-align: left;
-    width: 220px;
-    height: 311px;
-    min-height: 311px;
-  }
-
-  .trix-content {
-    padding: 5px;
-  }
-
-  .letter:before {
-    content:'';
-    width:100%;
-    height:100%;
-    position:absolute;
-    left:0;
-    top:0;
-    background:linear-gradient(transparent 240px, white);
-  }
-
-  h1 {
     font-size: 14px;
   }
 
-}
-
-footer {
-  text-align: center;
-  background-color: #ffffff;
-  line-height: 1.2;
-  a.icon, a.icon img {
-    width: 46px;
-    text-decoration: none;
+  img {
+    width: 100%;
   }
-  address, p {
-    font-size: 15px;
-  }
-
 
 }
 
+/**
+ * letters#new
+ */
+
+body.letters.new {
+  #new_controls {
+    overflow: auto;
+
+    .offline, .online {
+      float: left;
+      width: 50%;
+    }
+  }
+
+  .letter {
+  }
+
+  .trix {
+    position: relative;
+
+    trix-toolbar {
+      display: none;
+    }
+
+    input[type=submit] {
+      margin-top: 1em;
+    }
+  }
+}
+
+/**
+ * personal forms:
+ * letters#edit & admin/letters#edit
+ * letters#upload
+ */
+
+body.letters.edit,
+body.letters.upload {
+
+  form {
+    text-align: left;
+
+    fieldset, fieldset, fieldset {
+      margin: auto;
+    }
+
+    input[type=text], input[type=email],
+    input[type=number], select {
+      width: 100%;
+      height: 40px;
+      font-size: 15px;
+      margin-top: 2em;
+      margin-bottom: 0.5em;
+      border: 1px solid #000000;
+      padding-left: 0.5em;
+    }
+
+    input[type=checkbox] {
+      position: relative;
+      vertical-align: middle;
+      top: 0px;
+    }
+
+
+    fieldset#personal {
+      label {
+        display: inline;
+        font-size: 15px;
+        margin: 0;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+    }
+
+    fieldset#consent {
+      input[type=checkbox] {
+        position: relative;
+        vertical-align: top;
+        top: 5px;
+        width: 6%;
+      }
+
+      label {
+        display: inline-block;
+        width: 90%;
+
+      }
+
+    }
+
+  }
+}
+
+/**
+ * letters#index
+ */
+body.letters.index {
+
+
+  ul.filter_langs {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      flex: auto;
+    }
+
+    input[type=checkbox] {
+      position: relative;
+      vertical-align: middle;
+      bottom: 1px;
+    }
+  }
+
+  .thumbnails {
+    overflow: auto;
+  }
+
+  .thumbnail {
+    float: left;
+    cursor: zoom-in;
+    padding-left: 3vw;
+    padding-bottom: 1em;
+
+    a, a:hover {
+      text-decoration: none;
+      cursor: zoom-in;
+      font-size: 12px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 100%;
+      display: inline-block;
+    }
+
+    .letter {
+      position: relative;
+      width: 45vw;
+      height: 63vw; // 1.414 aspect ratio
+      min-height: 63vw;
+
+      .trix-content {
+        font-size: 10px;
+        text-align: left;
+        padding: 5px;
+
+        h1 {
+          font-size: 10px;
+        }
+      }
+    }
+
+    .letter:before {
+      content: '';
+      width: 100%;
+      height: 50%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background: linear-gradient(to bottom, rgba(#ffffff, 0), white);
+    }
+  }
+}
+
+/**
+ * letters#show
+ */
+body.letters.show {
+  .letter {
+    width: 98%;
+  }
+
+  .gallery {
+    position: relative;
+
+    nav {
+      position: absolute;
+      padding: 10px;
+    }
+
+    nav#prev {
+      right: 0px;
+    }
+
+    nav#next {
+      left: 0px;
+    }
+
+    a.button {
+      display: block;
+      margin: 1em auto;
+      width: 300px;
+      text-align: center;
+    }
+
+    .share {
+      a {
+        display: inline-block;
+        padding: 1em;
+        img {
+          width: 46px;
+        }
+      }
+    }
+  }
+}
+
+/**
+ * statics
+ */
+body.statics {
+  img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+
+  body, p, ol, ul, td {
+    font-size: 25px;
+    line-height: 38px;
+  }
+
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: inherit;
+  }
+
+  header {
+    height: 70px;
+
+    nav {
+      position: static;
+      text-align: right;
+      background-color: inherit;
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        font-weight: normal;
+        font-size: 20px;
+
+        li {
+          display: inline-block;
+          margin: 0;
+          padding-right: 10px;
+        }
+      }
+
+      ul#locales {
+        margin-left: 100px;
+        margin-right: 20px;
+
+        li {
+          font-size: 20px;
+          padding: 0;
+          padding-right: 10px;
+
+        }
+      }
+
+    }
+  }
+
+  #logo {
+    left: 50px;
+    top: 30px;
+    height: 180px;
+    width: 180px;
+  }
+
+  main {
+    width: 960px;
+    min-height: 600px;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 40px;
+
+    strong {
+      font-size: 90px;
+    }
+  }
+
+  h2 {
+    font-size: 37px;
+  }
+
+  a.button.nofunction, span.button.nofunction {
+    font-size: 18px;
+    padding: 18px;
+    line-height: 18px;
+  }
+
+  input[type=submit], a.button, span.button {
+    font-size: 18px;
+    padding: 18px;
+    line-height: 18px;
+  }
+
+  .upload-btn-wrapper {
+
+    .btn {
+      width: 100%;
+      font-size: 15px;
+      margin-top: 2em;
+      line-height: 1.5;
+      padding: 3em;
+      margin: 0;
+      font-weight: bold;
+      min-height: 150px;
+    }
+  }
+
+  .upload-btn-wrapper input[type=file] {
+    font-size: 120px;
+  }
+
+
+  body.letters.edit,
+  body.letters.upload {
+
+    form {
+
+      input[type=text], input[type=email],
+      input[type=number], select {
+        margin-bottom: 0;
+      }
+
+      input[type=checkbox] {
+        top: 2px;
+      }
+
+      fieldset#personal, fieldset#upload, fieldset#admin {
+        width: 500px;
+      }
+
+      fieldset#personal {
+        label {
+          display: inline;
+          font-size: 15px;
+          margin: 0;
+        }
+
+        p {
+          font-size: 18px;
+        }
+
+      }
+
+      fieldset#consent {
+        input[type=checkbox] {
+          top: 12px;
+          width: 20px;
+        }
+
+        label {
+          width: 870px;
+        }
+
+      }
+    }
+  }
+
+  body.letters.index {
+    .thumbnail {
+      width: 240px;
+      padding: 10px;
+
+      .letter {
+        width: 220px;
+        font-size: 12px;
+        height: 311px;
+        min-height: 311px;
+        margin: 0;
+
+        .trix-content {
+          font-size: 12px;
+
+          h1 {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .trix {
+
+    input[type=submit] {
+      position: absolute;
+      bottom: 30px;
+      right: 110px;
+      margin: 0;
+    }
+
+    trix-editor {
+      // don't let "submit letter" button overlap long texts when writing
+      padding-bottom: 85px;
+    }
+  }
+
+  body.letters.new,
+  body.letters.show {
+    .letter {
+      font-size: 20px;
+      width: 824px;
+      min-height: 764px;
+
+      .trix-content {
+        padding: 12px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .gallery {
+    nav {
+      top: 500px;
+    }
+  }
+
+
+  footer {
+
+    address, p {
+      font-size: 15px;
+    }
+
+  }
+
+
+}
 

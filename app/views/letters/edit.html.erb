@@ -5,7 +5,7 @@
 
 <p><%= t("letters.edit.hint") %></p>
 
-<%= form_with(model: @letter, local: true, id: "step2", class: "pt-2 pb-2") do |form| %>
+<%= form_with(model: @letter, local: true, class: "pt-2 pb-2") do |form| %>
 
   <%= render "personal_form", form: form %>
 
