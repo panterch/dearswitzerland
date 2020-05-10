@@ -25,10 +25,10 @@ de:
       Jeder Beitrag, egal ob kurz oder lang, ist für uns von grosser Bedeutung. Wenn du möchtest, kannst du deinen Brief auch anonym abgeben. Schreib mit uns zusammen die Zukunft der Schweiz."
       questions: "Hier ein paar paar inspirierende Fragen für deinen Brief: "
       question1: Was hast du aus der Covid-19 Krise gelernt?
-      question2: Von dem was sich verändert hat was wünscht du, das bleibt?
-      question3: Oder ganz allgemein, was möchtest du der zukünftigen Schweiz sagen?
+      question2: Wünschst du dir, dass einige dieser Veränderungen bleiben? Und wenn ja, welche?
+      question3: Oder ganz allgemein, was möchtest du der zukünftigen Schwiiz sagen?
       subtitle: Sag es uns - in dem Du ein Brief schreibst.
-      default_body: "Liäbi Schweiz,"
+      default_body: "Liäbi Schwiiz,"
       submit: Brief abschicken
       online1: Du möchtest das online machen?
       online2: Dann leg gleich los.
@@ -74,14 +74,14 @@ de:
       title1: die
       title2: Briefe
       hint: "Hier findest du alle Briefe, die wir erhalten haben.
-             Lies dich durch und erfahre, welche Gedanken andere mit dir und der Schweiz teilen möchten. "
+             Lies dich durch und erfahre, welche Gedanken andere mit dir und der Schwiiz teilen möchten. "
       filter: "Sortiere nach Sprache:"
 
   footer:
     address1: Reverse ag c/o Impact Hub, Viadukt 93 - 95
-    address2: 8005 Zürich, Schweiz
+    address2: 8005 Zürich, Schwiiz
     privacy: Datenschutzerklärung
-    versusvirus: "Liäbi Schweiz ist eine Initiative, die aus dem #versusvirus Hackathon entstanden ist."
+    versusvirus: "Liäbi Schwiiz ist eine Initiative, die aus dem #versusvirus Hackathon entstanden ist."
 
   email:
     thanks:

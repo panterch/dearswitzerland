@@ -15,7 +15,7 @@ body {
 
 body, p, ol, ul, td {
   font-family: 'Poppins', sans-serif;
-  font-size: 13px;
+  font-size: 18px;
   line-height: 20px;
 }
 
@@ -311,6 +311,7 @@ body.letters.new {
 .questions {
   p {
     line-height: 1;
+    font-size: 20px;
   }
   margin-bottom: 2em;
 }
@@ -584,6 +585,12 @@ body.statics {
     font-size: 37px;
   }
 
+  .questions {
+    p {
+      font-size: 27px;
+    }
+  }
+
   a.button.nofunction, span.button.nofunction {
     font-size: 18px;
     padding: 18px;
@@ -674,6 +681,8 @@ body.statics {
 
         .trix-content {
           font-size: 12px;
+          padding: 30px;
+          line-height: 1.9;
 
           h1 {
             font-size: 14px;
