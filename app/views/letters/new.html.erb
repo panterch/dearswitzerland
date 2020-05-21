@@ -17,8 +17,9 @@
 
 
 <%= form_with(model: @letter, local: true) do |form| %>
-  <div class="trix" data-controller="trix">
-    <%= form.rich_text_area :body %>
+  <div class="trix">
+    <p class="greeting"><%= t('letters.new.greeting') %></p>
+    <%= form.rich_text_area :body, placeholder: t('letters.new.placeholder') %>
     <%= submit_tag t("letters.edit.submit"), class: "mt-2" %>
   </div>
 <% end %>

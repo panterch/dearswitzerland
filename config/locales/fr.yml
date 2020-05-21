@@ -26,7 +26,8 @@ fr:
       question2: Qu’est qui a changé que vous souhaitez voir continuer?
       question3: Ou que voulez-vous partager à la Suisse future?
       subtitle: Dites-le nous en écrivant une lettre ou un commentaire.
-      default_body: "Chère Suisse,"
+      greeting: "Chère Suisse,"
+      placeholder: Commencer à écrire ...
       submit: Envoyer
       offline1: Ou plutôt au crayon et sur papier?
       offline2: Télécharger modèle

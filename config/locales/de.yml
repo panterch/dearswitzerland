@@ -25,7 +25,8 @@ de:
       question2: Von dem was sich verändert hat was wünscht du, das bleibt?
       question3: Oder ganz allgemein, was möchtest du der zukünftigen Schweiz sagen?
       subtitle: Sag es uns in dem Du einen Brief oder Kommentar schreibst.
-      default_body: "Liäbi Schweiz,"
+      greeting: "Liäbi Schweiz,"
+      placeholder: Fang an zu schreiben ...
       submit: Brief abschicken
       offline1: Du bevorzugst Stift und Papier?
       offline2: Lade die Briefvorlage runter.

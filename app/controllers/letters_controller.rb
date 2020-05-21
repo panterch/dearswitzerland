@@ -17,7 +17,6 @@ class LettersController < ApplicationController
 
   def new
     @letter = Letter.new
-    @letter.body.body = Letter.default_body
     @feed_images = (1..16).to_a.shuffle.first(9).map { |i| "feed#{i}.jpg" }
   end
 

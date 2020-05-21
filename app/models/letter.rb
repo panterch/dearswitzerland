@@ -36,10 +36,6 @@ class Letter < ApplicationRecord
     s + ": " + name
   end
 
-  def self.default_body
-    "<div>#{I18n.t("letters.new.default_body")}<br><br></div>"
-  end
-
   private
 
   def set_secure_tokens
