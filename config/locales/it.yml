@@ -23,16 +23,12 @@ it:
     new:
       title1: Carra
       title2: Svizzera
-      intro: "Attraverso questa piattaforma, vi invitiamo a condividere le vostre esperienze e le vostre riflessioni durante questo periodo di crisi del COVID-19, ma anche le vostre speranze e le vostre idee per una Svizzera post-covid. Siamo convinti che raccogliere e prendere nota del vissuto e della creatività di tutta la popolazione svizzera sia la chiave per creare un futuro migliore. Scriviamo insieme questo bel futuro della Svizzera."
-      questions: "Ecco qualche tema per ispirarsi:"
       question1: Cosa avete imparato dalla crisi del COVID-19?
       question2: Quale cambiamento vorreste vedere durare ?
       question3: O che vorreste condividere con una Svizzera futura?
-      subtitle: Condividetelo con noi - scrivendo una lettera.
+      subtitle: Ditecelo scrivendo una lettera o un commento.
       default_body: "Cara Svizzera,"
       submit: Inviare
-      online1: Volete scrivere in linea?
-      online2: Cominciate la redazione subito
       offline1: Preferite scriverla con matita e carta?
       offline2: Scaricare esemplare
 

@@ -1,54 +1,39 @@
-<h1 class="mt-3 mb-3">
+<h1 class="mt-3">
   <%= t("letters.new.title1") %>
   <strong><%= t("letters.new.title2") %></strong>
 </h1>
 
-<section class="mb-2">
-  <p><%= t("letters.new.intro") %></p>
-</section>
-<section>
-  <p style="font-weight: bold"><%= t("letters.new.questions") %></p>
-  <div class="questions">
+
+<div class="questions mt-3">
   <p><%= t("letters.new.question1") %></p>
   <p><%= t("letters.new.question2") %></p>
   <p><%= t("letters.new.question3") %></p>
-  </div>
-</section>
+</div>
 
-<h2 class="mt-1 mb-2">
+
+<h2 class="mt-3 mb-3">
   <%= t("letters.new.subtitle") %>
 </h2>
 
-<div id="new_controls">
-  <div class="online">
-    <p><%= t("letters.new.online1") %></p>
-    <p>
-        <span class="button nofunction">
-            <%= t("letters.new.online2") %>
-        </span>
-    </p>
-    <p><%= image_tag "down.svg" %></p>
-  </div>
-  <div class="offline">
-    <p><%= t("letters.new.offline1") %></p>
-    <p>
-      <a href="/letter.<%= I18n.locale %>.pdf" class="button">
-        <%= t("letters.new.offline2") %>
-      </a>
-      </a>
-    </p>
-  </div>
-</div>
 
 <%= form_with(model: @letter, local: true) do |form| %>
-
-  <div class="trix mb-3" data-controller="trix">
-    <%= form.rich_text_area :body, class: "letter" %>
-    <%= submit_tag t("letters.edit.submit") %>
+  <div class="trix" data-controller="trix">
+    <%= form.rich_text_area :body %>
+    <%= submit_tag t("letters.edit.submit"), class: "mt-2" %>
   </div>
-
-
 <% end %>
+
+
+<div class="offline mt-3">
+  <p><%= t("letters.new.offline1") %></p>
+  <p>
+    <a href="/letter.<%= I18n.locale %>.pdf" class="button">
+      <%= t("letters.new.offline2") %>
+    </a>
+    </a>
+  </p>
+</div>
+
 
 <div class="feed mt-10 mb-10">
     <% @feed_images.each do |img| %>

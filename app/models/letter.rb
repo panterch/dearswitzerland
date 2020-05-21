@@ -37,7 +37,7 @@ class Letter < ApplicationRecord
   end
 
   def self.default_body
-    "<div class=\"trix-content\"><h1>#{I18n.t("letters.new.default_body")}</h1><div><br></div></div>"
+    "<div>#{I18n.t("letters.new.default_body")}<br><br></div>"
   end
 
   private
