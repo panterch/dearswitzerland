@@ -43,6 +43,7 @@ body, p, ol, ul, td {
 }
 
 
+
 header {
 
   height: 45px;
@@ -136,11 +137,6 @@ footer {
     line-height: normal;
     margin-bottom: 0;
   }
-}
-
-.pt-2 {
-  padding-bottom: 0.5em;
-  padding-top: 0.5em;
 }
 
 /**
@@ -300,14 +296,18 @@ body.letters.new {
     }
   }
 
+
   .feed {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    img {
-      position: relative;
-      flex: 1 0 30%;
-      margin: 1%;
+    .item {
+      flex: 1 0 33%;
+
+      img {
+        width: 96%;
+        margin: 2%;
+      }
     }
   }
 
