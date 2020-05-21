@@ -19,7 +19,7 @@ body, p, ol, ul, td {
   line-height: 20px;
 }
 
-@for $i from 1 through 5 {
+@for $i from 1 through 10 {
   #{".mt-"+$i} {
     margin-top: #{$i+"em"};
   }
@@ -299,6 +299,19 @@ body.letters.new {
       margin-top: 1em;
     }
   }
+
+  .feed {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    img {
+      position: relative;
+      flex: 1 0 30%;
+      margin: 1%;
+    }
+  }
+
+
 }
 
 .mb-2 {
