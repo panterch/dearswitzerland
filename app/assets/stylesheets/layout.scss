@@ -14,9 +14,10 @@ body {
 }
 
 body, p, ol, ul, td {
-  font-family: 'Poppins', sans-serif;
-  font-size: 13px;
-  line-height: 20px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 400;
 }
 
 @for $i from 1 through 10 {
@@ -70,25 +71,27 @@ header {
     }
 
     ul {
-      padding-top: 1em;
+      position: absolute;
+      top: 50px;
       list-style-type: none;
       display: block;
       font-weight: bolder;
       font-size: 30px;
 
       li {
-        margin-top: 1.5em;
+        margin-top: 1.3em;
         margin-left: 5px;
-        text-transform: uppercase;
+        text-transform: capitalize;
       }
     }
 
     ul#locales {
+      top: 10px;
+
       li {
         font-weight: normal;
         display: inline-block;
         font-size: 15px;
-        margin-top: 0;
         padding-right: 2em;
       }
     }
@@ -111,11 +114,13 @@ main {
 
 #logo {
   position: absolute;
-  z-index: -1;
   left: 10px;
   top: 10px;
-  height: 100px;
-  width: 100px;
+
+  img {
+    height: 100px;
+    width: 100px;
+  }
 }
 
 footer {
@@ -147,15 +152,20 @@ a, a:visited, a:hover {
   color: inherit;
 }
 
+
+h1, h2, h3 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+}
+
 h1 {
-  font-weight: bolder;
-  text-decoration: underline;
   font-size: 25px;
   text-transform: uppercase;
   line-height: 0.9;
 
   strong {
     font-size: 50px;
+    font-weight: 700;
     text-transform: none;
   }
 
@@ -166,8 +176,7 @@ h1 {
 }
 
 h2 {
-  font-weight: bold;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 /**
@@ -182,7 +191,7 @@ input[type=submit], a.button, span.button {
   padding: 12px;
   line-height: 12px;
   border: 0px;
-  font-weight: bold;
+  font-weight: 400;
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
   border-radius: 0;
 
@@ -249,7 +258,7 @@ a.button.nofunction, span.button.nofunction {
   min-height: 70vh;
 
   .trix-content {
-    padding: 10px;
+    padding: 14px;
   }
 
   h1 {
@@ -273,9 +282,7 @@ a.button.nofunction, span.button.nofunction {
  */
 
 body.letters.new {
-  .questions p {
-    line-height: 1;
-  }
+
   #new_controls {
     overflow: auto;
 
@@ -438,9 +445,9 @@ body.letters.index {
 
     .letter {
       position: relative;
-      width: 45vw;
-      height: 63vw; // 1.414 aspect ratio
-      min-height: 63vw;
+      width: 37vw;
+      height: 52vw; // 1.414 aspect ratio
+      min-height: 52vw;
 
       .trix-content {
         font-size: 10px;
@@ -471,6 +478,10 @@ body.letters.index {
 body.letters.show {
   .letter {
     width: 98%;
+
+    .trix-content {
+      padding: 15px;
+    }
   }
 
   .gallery {
@@ -524,6 +535,10 @@ body.statics {
     line-height: 38px;
   }
 
+  h2 {
+    font-size: 25px;
+  }
+
   .mobile {
     display: none;
   }
@@ -540,6 +555,7 @@ body.statics {
       background-color: inherit;
 
       ul {
+        position: static;
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -550,7 +566,7 @@ body.statics {
         li {
           display: inline-block;
           margin: 0;
-          padding-right: 10px;
+          padding-right: 30px;
         }
       }
 
@@ -572,8 +588,10 @@ body.statics {
   #logo {
     left: 50px;
     top: 30px;
-    height: 180px;
-    width: 180px;
+    img {
+      height: 180px;
+      width: 180px;
+    }
   }
 
   main {
@@ -592,18 +610,15 @@ body.statics {
     }
   }
 
-  h2 {
-    font-size: 37px;
-  }
 
   a.button.nofunction, span.button.nofunction {
-    font-size: 18px;
+    font-size: 25px;
     padding: 18px;
     line-height: 18px;
   }
 
   input[type=submit], a.button, span.button {
-    font-size: 18px;
+    font-size: 25px;
     padding: 18px;
     line-height: 18px;
   }
@@ -612,7 +627,7 @@ body.statics {
 
     .btn {
       width: 100%;
-      font-size: 15px;
+      font-size: 25px;
       margin-top: 2em;
       line-height: 1.5;
       padding: 3em;
@@ -702,7 +717,7 @@ body.statics {
       min-height: 764px;
 
       .trix-content {
-        padding: 12px;
+        padding: 55px;
       }
 
       h1 {
