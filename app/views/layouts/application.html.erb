@@ -72,6 +72,15 @@
 </a>
 
 <footer class="pt-5 pb-2" data-action="click->application#logoclick">
+  <p class="mt-2 mb-2"><%= t("footer.versusvirus") %></p>
+  <p  class="mt-2 mb-2 partners">
+    <a href="https://www.versusvirus.ch/" target="_blank" class="partner">
+      <%= image_tag "versusvirus.png" %>
+    </a>
+    <a href="https://ec-epfl.ch/" target="_blank" class="partner">
+      <%= image_tag "ec.png" %>
+    </a>
+  </p>
   <a href="https://www.facebook.com/Dear-Switzerland-103540081329743" target="_blank" class="icon">
     <%= image_tag "facebook-light.svg" %>
   </a>
@@ -87,7 +96,6 @@
   </address>
   <p><%= mail_to "info@dearswitzerland.org" %></p>
   <p class="mt-2 mb-2"><%= link_to t("footer.privacy"), privacy_path %></p>
-  <p><%= t("footer.versusvirus") %></p>
 </footer>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->

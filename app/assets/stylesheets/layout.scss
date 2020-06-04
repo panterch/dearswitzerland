@@ -128,6 +128,11 @@ footer {
   background-color: #ffffff;
   line-height: 1.2;
 
+  a.partner img {
+    max-height: 70px;
+    max-width: 100%;
+  }
+
   a.icon, a.icon img {
     width: 36px;
     text-decoration: none;
