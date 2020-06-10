@@ -17,7 +17,7 @@ class LettersController < ApplicationController
 
   def new
     @letter = Letter.new
-    @letter.body.body = Letter.default_body
+    @feed_images = (1..16).to_a.shuffle.first(9).map { |i| "feed#{i}.jpg" }
   end
 
 
@@ -50,8 +50,8 @@ class LettersController < ApplicationController
       ApplicationMailer.send_notifications(@letter)
       return redirect_to thanks_letter_url(@letter)
     end
-    # should not be reached
-    render :new
+    # corner case, e.g. empty letter submitted
+    return redirect_to new_letter_url
   end
 
 

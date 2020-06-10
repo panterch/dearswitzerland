@@ -13,7 +13,7 @@
   <%= csp_meta_tag %>
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=0">
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap" rel="stylesheet">
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
@@ -46,6 +46,11 @@
       <li class="<%= "active" if :faq == @nav %>">
         <%= link_to t("nav.faq_path"), faq_path %>
       </li>
+      <li class="mobile">
+      <a href="https://instagram.com/dear.switzerland" target="_blank" class="icon">
+        <%= image_tag "instagram-light.svg" %>
+      </a>
+      </li>
     </ul>
 
     <ul id="locales">
@@ -62,27 +67,35 @@
   <%= yield %>
 </main>
 
-<%= image_tag "logo.svg", id: :logo %>
+<a href="<%= new_letter_path %>" id="logo">
+<%= image_tag "logo.svg" %>
+</a>
 
-<footer class="pt-2 pb-2" data-action="click->application#logoclick">
+<footer class="pt-5 pb-2" data-action="click->application#logoclick">
+  <p class="mt-2 mb-2"><%= t("footer.versusvirus") %></p>
+  <p  class="mt-2 mb-2 partners">
+    <a href="https://www.versusvirus.ch/" target="_blank" class="partner">
+      <%= image_tag "versusvirus.png" %>
+    </a>
+    <a href="https://ec-epfl.ch/" target="_blank" class="partner">
+      <%= image_tag "ec.png" %>
+    </a>
+  </p>
   <a href="https://www.facebook.com/Dear-Switzerland-103540081329743" target="_blank" class="icon">
     <%= image_tag "facebook-light.svg" %>
   </a>
   <a href="https://instagram.com/dear.switzerland" target="_blank" class="icon">
-
     <%= image_tag "instagram-light.svg" %>
-
   </a>
   <a href="https://linkedin.com/company/dearswitzerland" target="_blank" class="icon">
     <%= image_tag "linkedin-light.svg" %>
   </a>
-  <address class="mt-3">
+  <address class="mt-2">
     <%= t("footer.address1") %><br>
     <%= t("footer.address2") %><br>
   </address>
   <p><%= mail_to "info@dearswitzerland.org" %></p>
-  <p><%= link_to t("footer.privacy"), privacy_path %></p>
-  <p><%= t("footer.versusvirus") %></p>
+  <p class="mt-2 mb-2"><%= link_to t("footer.privacy"), privacy_path %></p>
 </footer>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->

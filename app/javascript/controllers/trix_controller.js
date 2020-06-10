@@ -8,9 +8,7 @@ export default class extends Controller {
       var element = document.querySelector("trix-editor");
       var editor = element.editor;
 
-      for (var i = 1; i < element.editor.getDocument().toString().length; i++) {
-        editor.moveCursorInDirection("forward");
-      }
+      // nothing here yet ...
     });
   }
 

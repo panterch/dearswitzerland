@@ -24,17 +24,14 @@ en:
     new:
       title1: Dear
       title2: Switzerland
-      intro: "With this platform we invite you to share your reflections and experiences about the crisis, as well as your hopes and ideas for Switzerland’s post COVID-19 future. We believe that capturing the collective wisdom and creativity of the Swiss population is the key to shaping all that lies ahead.
-      Every contribution, whether a few quick thoughts or a longer letter, is of great importance. Contributions can be submitted anonymously if you prefer. Let’s write our way to a transformed future for Switzerland!"
-      questions: "Here are some inspirational questions:"
       question1: What have you learned from the COVID-19 crisis?
       question2: What has changed that you hope will continue?
       question3: Or what do you want to share with the future Switzerland?
-      subtitle: Let us know -- by writing your thoughts below
-      default_body: "Dear Switzerland,"
+      subtitle: Let us know by writing a letter or comment.
+      intro: The aim of “Dear Switzerland” is to give the entire Swiss population a voice, a venue and a platform to share reflections, learnings and experiences about the Covid-19 crisis.
+      greeting: "Dear Switzerland,"
+      placeholder: Start writing ...
       submit: Send
-      online1: Like to do it online?
-      online2: Start writing here
       offline1: Prefer pen and paper?
       offline2: Download template
 

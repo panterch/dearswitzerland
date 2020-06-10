@@ -21,17 +21,14 @@ de:
     new:
       title1: Liäbi
       title2: Schwiiz
-      intro: "Wir laden dich ein, deine Gedanken und Erlebnisse während COVID-19 Massnahmen, sowie deine Hoffnungen für die Schweiz nach der Krise auf unserer Plattform zu teilen. Wir glauben, dass wir aus den geteilten Erlebnissen, Erfahrungen und Ideen der Bevölkerung die Lösungen für die Zukunft schaffen und Lehren ziehen können.
-      Jeder Beitrag, egal ob kurz oder lang, ist für uns von grosser Bedeutung. Wenn du möchtest, kannst du deinen Brief auch anonym abgeben. Schreib mit uns zusammen die Zukunft der Schweiz."
-      questions: "Hier ein paar paar inspirierende Fragen für deinen Brief: "
       question1: Was hast du aus der Covid-19 Krise gelernt?
-      question2: Wünschst du dir, dass einige dieser Veränderungen bleiben? Und wenn ja, welche?
-      question3: Oder ganz allgemein, was möchtest du der zukünftigen Schwiiz sagen?
-      subtitle: Sag es uns - in dem Du ein Brief schreibst.
-      default_body: "Liäbi Schwiiz,"
+      question2: Von dem was sich verändert hat was wünscht du, das bleibt?
+      question3: Oder ganz allgemein, was möchtest du der zukünftigen Schweiz sagen?
+      subtitle: Sag es uns in dem Du einen Brief oder Kommentar schreibst.
+      intro: Das Ziel der Initiative ist dem Volk eine Stimme zu geben. Es soll eine Plattform sein, auf welcher Menschen ihre Gedanken und ihre neuen Erfahrungen aus der Covid-19 Krise austauschen können.
+      greeting: "Liäbi Schweiz,"
+      placeholder: Schreibe hier ...
       submit: Brief abschicken
-      online1: Du möchtest das online machen?
-      online2: Dann leg gleich los.
       offline1: Du bevorzugst Stift und Papier?
       offline2: Lade die Briefvorlage runter.
 

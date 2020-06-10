@@ -22,17 +22,14 @@ fr:
     new:
       title1: Chère
       title2: Suisse
-      intro: "À travers cette plateforme, nous vous invitons à partager vos réflexions et vos expériences concernant la crise du COVID-19, ainsi que vos espoirs et vos idées pour le future post-covid de la suisse. Nous sommes convaincus que recueillir le vécu commun et la créativité de la population suisse sont les clés pour façonner un meilleur avenir.
-      Chaque contribution, qu’elle soit sous forme d’une brève observation ou une longue lettre est d’une grande importance à nos yeux. Vous pouvez soumettre vos réflexion anonymement si vous le préférez. Écrivons ensemble pour un avenir meilleur de la Suisse!"
-      questions: "Voici quelques sujet pour vous inspirer:"
       question1: Qu’avez vous appris de la crise du COVID-19?
       question2: Qu’est qui a changé que vous souhaitez voir continuer?
       question3: Ou que voulez-vous partager à la Suisse future?
-      subtitle: Faites-nous en part - en écrivant vos pensées.
-      default_body: "Chère Suisse,"
+      subtitle: Dites-le nous en écrivant une lettre ou un commentaire.
+      intro: L'objectif de "Chère Suisse" est de donner à toute la population suisse une voix, un lieu et une plate-forme pour partager des réflexions, des enseignements et des expériences sur la crise du Covid-19.
+      greeting: "Chère Suisse,"
+      placeholder: Commencer à écrire ...
       submit: Envoyer
-      online1: Vous voulez l’écrire en ligne?
-      online2: Commencez à la rédiger toute suite
       offline1: Ou plutôt au crayon et sur papier?
       offline2: Télécharger modèle
 
