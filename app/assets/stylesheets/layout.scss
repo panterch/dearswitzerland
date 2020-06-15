@@ -533,6 +533,14 @@ body.statics {
   }
 }
 
+body.statics.privacy {
+  h2, p, ul, li {
+    text-align: justify;
+    font-size: 20px;
+    line-height: normal;
+  }
+}
+
 @media screen and (min-width: 960px) {
 
   body, p, ol, ul, td {
