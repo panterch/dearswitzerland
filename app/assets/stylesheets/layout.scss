@@ -534,11 +534,13 @@ body.statics {
   }
 }
 
-body.statics.privacy {
-  h2, p, ul, li {
+body.statics.privacy, body.statics.terms {
+  .pt-1{
     text-align: justify;
-    font-size: 20px;
-    line-height: normal;
+    p, h2, ul, li {
+      font-size: 20px;
+      line-height: normal;
+    }
   }
 }
 
