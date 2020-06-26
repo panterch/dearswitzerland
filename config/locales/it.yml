@@ -21,7 +21,7 @@ it:
 
   letters:
     new:
-      title1: Carra
+      title1: Cara
       title2: Svizzera
       question1: Cosa avete imparato dalla crisi del COVID-19?
       question2: Quale cambiamento vorreste vedere durare ?
@@ -43,7 +43,7 @@ it:
     edit:
       title1: ci siete
       title2: quasi
-      hint: "Siete pregati di riempire les informazioni seguenti per scegliere quali informazione condividere e per pubblicare la vostra lettera sul sito."
+      hint: "Siete pregati di riempire le informazioni seguenti per scegliere quali informazione condividere e per pubblicare la vostra lettera sul sito."
       placeholder_name: Nome
       label_publish_name: Autorizzo a pubblicare il mio nome
       placeholder_email: "EMail*"
@@ -80,6 +80,7 @@ it:
     address1: Reverse ag c/o Impact Hub, Viadukt 93 - 95
     address2: 8005 Zürich, Svizzera
     privacy: Informativa sulla privacy
+    terms: condizioni di utilizzo
     versusvirus: "Un'iniziativa nata dal hackathon #versusvirus."
 
   email:

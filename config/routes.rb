@@ -17,6 +17,7 @@ Rails.application.routes.draw do
     get 'about', to: 'statics#about'
     get 'faq', to: 'statics#faq'
     get 'privacy', to: 'statics#privacy'
+    get 'terms', to: 'statics#terms'
 
   end
 

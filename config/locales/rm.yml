@@ -1,2 +1,96 @@
 rm:
-  hello: "RM"
+
+
+  locales:
+    en: Engles
+    de: Tudestg
+    it: Talian
+    rm: Romontsch sursilvan
+    fr: Franzos
+
+  nav:
+    new_letter_path: scriver
+    letters_path: brevs
+    about_path: about
+    faq_path: FAQ
+    upload_letter_path: upload
+
+  canton:
+    abroad: "Swiss Citizen Abroad"
+    other: "Other Connection to Switzerland"
+
+
+  letters:
+    new:
+      title1: Cara
+      title2: Svizra
+      question1: Tgei has ti empriu dalla crisa da Covid-19?
+      question2: Tgei ei semidau, tgei speras ti che mondi vinavon?
+      question3: Ni tgei less ti parter cun la Svizra digl avegnir?
+      subtitle: Dai part a Cara Svizra – per scriver tes patratgs suandont
+      intro: Sin quella plattaforma envidein nus tei a parter tes patratgs ed experientschas duront quella crisa da COVID-19, mo aunc tias speronzas ed ideas per la Svizra suenter la crisa. Nus cartein ch’ei seigi fetg impurtont da rimnar la sabientscha e creatividad collectiva dalla populaziun svizra per crear in meglier avegnir.
+      greeting: "Cara Svizra,"
+      placeholder: Dai part a nus —scrivi ina brev...
+      submit: Tarmetter la brev
+      offline1: Scrivas ti pli bugen a maun?
+      offline2: Musters da cargar giu
+
+    upload:
+      title1: tarmetta
+      title2: Tia brev
+      nofile: Tarmetta tia brev
+      hasfile: Engraziel!
+
+    edit:
+      title1: Ti eis
+      title2: bunamein leu
+      hint: "Cumpletescha tias informaziuns per che nus saveien publicar tia brev sin internet, e decida tgei informaziuns che ti lesses schar mussar."
+      placeholder_name: Tiu num
+      label_publish_name: Jeu sun d’accord che miu num vegn publicaus
+      placeholder_email: "Email*"
+      label_email: Quell'informaziun vegn buca publicada, ella ei survescha mo per sco verificaziun
+      placeholder_age: Vegliadetgna
+      placeholder_canton: Cantun
+      label_publish_age: Jeu sun d’accord che mia vegliadetgna vegn publicada
+      label_publish_canton: Jeu sun d’accord che miu cantun da dimora vegn publicaus
+      legend_consent: "Lungatg da tia brev "
+      label_catalog: "Eis ti d’accord che tia brev vegn publicada el catalog online e considerada per il cudisch Cara Svizra?"
+      label_recall: "Lesses ti survegnir ina copia da tia brev en in onn?"
+      label_newsletter: "Lesses ti survegnir newsletters davart l'iniziativa Cara Svizra?"
+      required: "* obligatori"
+      submit: Tarmetta tia brev
+
+
+    show:
+      private: Quella brev ei mo veseivla mo per tei.
+
+    thanks:
+      title1: engraziel
+      title2: fetg
+      subtitle: Tia brev ei vegnida tarmessa cun success.
+      p1: En in pèr muments survegnas ti ina confirmaziun per e-mail en in pèr muments.
+      p2: "Sche ti midas il meini e lesses revocar tia brev, tarmetta a nus in e-mail: info@dearswitzerland.org."
+
+    index:
+      title1: Las
+      title2: Brevs
+      hint: "Quei ei ina collecziun dallas brevs che nus vein survegniu.
+             Legia tras ellas ed endriescha ils patratgs dad autras persunas en Svizra."
+      filter: "Tscharna per lungatg:"
+
+  footer:
+    address1: Reverse ag c/o Impact Hub, Viadukt 93 - 95
+    address2: 8005 Zürich, Switzerland
+    privacy: Privacy Policy
+    terms: Terms of Use
+    versusvirus: "An initiative out of the #versusvirus hackathon."
+
+  email:
+    thanks:
+      subject: Engraziel!
+      title1: engraziel
+      title2: Fetg!
+      p1: Engraziel per haver partiu tes patratgs, giavischs, speronzas, commentaris ed historias persunalas cun Cara Svizra.
+      p2: Tia brev vegn tractada e publicada aschi spert sco pusseivel sin dearswitzerland.org
+        Parta tia brev cun tes amitgs
+      share: Parta tia brev cun tes amitgs

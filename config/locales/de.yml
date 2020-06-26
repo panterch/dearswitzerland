@@ -71,13 +71,14 @@ de:
       title1: die
       title2: Briefe
       hint: "Hier findest du alle Briefe, die wir erhalten haben.
-             Lies dich durch und erfahre, welche Gedanken andere mit dir und der Schweiz teilen möchten. "
+             Lies dich durch und erfahre, welche Gedanken andere mit dir und der Schwiiz teilen möchten. "
       filter: "Sortiere nach Sprache:"
 
   footer:
     address1: Reverse ag c/o Impact Hub, Viadukt 93 - 95
-    address2: 8005 Zürich, Schweiz
+    address2: 8005 Zürich, Schwiiz
     privacy: Datenschutzerklärung
+    terms: Nutzungsbedingungen
     versusvirus: "Liäbi Schweiz ist eine Initiative, die aus dem #versusvirus Hackathon entstanden ist."
 
   email:

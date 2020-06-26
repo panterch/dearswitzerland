@@ -95,7 +95,10 @@
     <%= t("footer.address2") %><br>
   </address>
   <p><%= mail_to "info@dearswitzerland.org" %></p>
-  <p class="mt-2 mb-2"><%= link_to t("footer.privacy"), privacy_path %></p>
+  <p class="mt-2 mb-2">
+    <%= link_to t("footer.privacy"), privacy_path %> |
+    <%= link_to t("footer.terms"), terms_path %>
+  </p>
 </footer>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
