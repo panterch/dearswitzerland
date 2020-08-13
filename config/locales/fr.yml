@@ -52,8 +52,8 @@ fr:
       label_publish_age: J’autorise à publier mon âge
       label_publish_canton: J’autorise à publier mon canton
       legend_consent: "Choisissez tout ce qui est valable:"
-      label_terms: "J'accepte les conditions."
-      label_privacy: "J'accepte la politique de confidentialité."
+      label_terms_html: "J'accepte <a href='/fr/terms' target='_blank'>les conditions</a>."
+      label_privacy_html: "J'accepte <a href='/fr/privacy' target='_blank'>la politique de confidentialité</a>."
       label_over_15: "Je reconnais que j'ai au moins 15 ans."
       label_newsletter: "Je souhaite recevoir par courrier électronique des informations sur l'initiative ”Chère Suisse”."
       required: "* requis"

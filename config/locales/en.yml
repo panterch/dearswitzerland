@@ -54,8 +54,8 @@ en:
       label_publish_age: I agree to publish my age
       label_publish_canton: I agree to publish the canton I live in
       legend_consent: "Choose all that apply:"
-      label_terms: "I accept the Terms."
-      label_privacy: "I accept the Privacy Policy."
+      label_terms_html: "I accept the <a href='/en/terms' target='_blank'>Terms</a>."
+      label_privacy_html: "I accept the <a href='/en/privacy' target='_blank'>Privacy Policy</a>."
       label_over_15: "I acknowledge that I am at least 15 years old."
       label_newsletter: "I would like to receive email updates about the ”Dear Switzerland” initiative."
       required: "* required"
