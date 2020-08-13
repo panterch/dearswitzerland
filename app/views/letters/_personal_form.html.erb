@@ -16,12 +16,16 @@
 <fieldset id="consent" class="mt-2">
   <h3><%= t("letters.edit.legend_consent") %></h3>
   <div class="field">
-    <%= form.check_box :catalog %>
-    <%= form.label :catalog, t("letters.edit.label_catalog") %>
+    <%= form.check_box :terms %>
+    <%= form.label :terms, t("letters.edit.label_terms") %>
   </div>
   <div class="field">
-    <%= form.check_box :recall %>
-    <%= form.label :recall, t("letters.edit.label_recall") %>
+    <%= form.check_box :privacy %>
+    <%= form.label :privacy, t("letters.edit.label_privacy") %>
+  </div>
+  <div class="field">
+    <%= form.check_box :over_15 %>
+    <%= form.label :over_15, t("letters.edit.label_over_15") %>
   </div>
   <div class="field">
     <%= form.check_box :newsletter %>
