@@ -96,7 +96,7 @@ class LettersController < ApplicationController
       # - slug
       # - token
       # - id
-      params.require(:letter).permit(:body, :name, :email, :age, :canton, :lang, :catalog, :publish_name, :publish_age, :publish_canton, :recall, :newsletter, :user_upload)
+      params.require(:letter).permit(:body, :name, :email, :age, :canton, :lang, :publish_name, :publish_age, :publish_canton, :terms, :privacy, :over_15, :newsletter, :user_upload)
     end
 
     def set_nav_write
