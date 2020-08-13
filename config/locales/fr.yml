@@ -52,9 +52,10 @@ fr:
       label_publish_age: J’autorise à publier mon âge
       label_publish_canton: J’autorise à publier mon canton
       legend_consent: "Choisissez tout ce qui est valable:"
-      label_catalog: "Voulez-vous que votre lettre soit publiée sur le catalogue en ligne et considérée pour le livre ”Chère Suisse”? ?"
-      label_recall: "Voulez-vous recevoir une copie de votre mail dans un an ? "
-      label_newsletter: "Voulez-vous recevoir des newsletters concernant l’initiative ”Chère Suisse”?"
+      label_terms: "J'accepte les conditions."
+      label_privacy: "J'accepte la politique de confidentialité."
+      label_over_15: "Je reconnais que j'ai au moins 15 ans."
+      label_newsletter: "Je souhaite recevoir par courrier électronique des informations sur l'initiative ”Chère Suisse”."
       required: "* requis"
       submit: Envoyer ma lettre
 

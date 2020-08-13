@@ -54,9 +54,10 @@ en:
       label_publish_age: I agree to publish my age
       label_publish_canton: I agree to publish the canton I live in
       legend_consent: "Choose all that apply:"
-      label_catalog: "Do you approve to have your letter published in the online catalog and considered for the Dear Switzerland book?"
-      label_recall: "Do you want to receive a copy of your letter via email one year from now?"
-      label_newsletter: "Do you want to receive email updates about the Dear Switzerland initiative?"
+      label_terms: "I accept the Terms."
+      label_privacy: "I accept the Privacy Policy."
+      label_over_15: "I acknowledge that I am at least 15 years old."
+      label_newsletter: "I would like to receive email updates about the ”Dear Switzerland” initiative."
       required: "* required"
       submit: Submit your letter
 
@@ -84,12 +85,12 @@ en:
     privacy: Privacy Policy
     terms: Terms of Use
     versusvirus: "An initiative out of the #versusvirus hackathon."
-  
+
   email:
     thanks:
       subject: Thanks!
       title1: thank
       title2: You
       p1: Thank you for sharing your thoughts, wishes, hopes, comments and personal stories with dearswitzerland.
-      p2: Your letter will be processed and after a successful screening uploaded to dearswitzerland.org 
-      share: Share your letter with your friends 
+      p2: Your letter will be processed and after a successful screening uploaded to dearswitzerland.org
+      share: Share your letter with your friends

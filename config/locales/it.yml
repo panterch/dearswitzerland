@@ -53,9 +53,10 @@ it:
       label_publish_age: Autorizzo a pubblicare la mia età
       label_publish_canton: Autorizzo a pubblicare il mio cantone
       legend_consent: "Scegliere tutto quello che è giusto:"
-      label_catalog: "Desiderate che la vostra lettera sia pubblicata sul catalogo in linea e presa in considerazione per il libro ”Cara Svizzera”? "
-      label_recall: "Desiderate ricevere una copia del vostro mail tra un anno?"
-      label_newsletter: "Desiderate ricevere le newsletter a riguardo dell’iniziativa ”Cara Svizzera” ?"
+      label_terms: "Accetto le Condizioni."
+      label_privacy: "Accetto l'informativa sulla privacy."
+      label_over_15: "Riconosco di avere almeno 15 anni."
+      label_newsletter: "Desidero ricevere per e-mail aggiornamenti sull'iniziativa ”Cara Svizzera”."
       required: "* obbligatorio"
       submit: Inviare lettera
 
