@@ -18,12 +18,13 @@ Rails.application.routes.draw do
     get 'faq', to: 'statics#faq'
     get 'privacy', to: 'statics#privacy'
     get 'terms', to: 'statics#terms'
+    get 'partners', to: 'statics#partners'
 
   end
 
 
   get "/:locale", to: redirect('/%{locale}/letters/new')
   root to: redirect('/en/letters/new')
-  
+
 end
 
