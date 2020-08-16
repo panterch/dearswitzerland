@@ -14,6 +14,7 @@ en:
     about_path: about
     faq_path: FAQ
     upload_letter_path: upload
+    partners_path: partners
 
   canton:
     abroad: "Swiss Citizen Abroad"
@@ -84,12 +85,12 @@ en:
     privacy: Privacy Policy
     terms: Terms of Use
     versusvirus: "An initiative out of the #versusvirus hackathon."
-  
+
   email:
     thanks:
       subject: Thanks!
       title1: thank
       title2: You
       p1: Thank you for sharing your thoughts, wishes, hopes, comments and personal stories with dearswitzerland.
-      p2: Your letter will be processed and after a successful screening uploaded to dearswitzerland.org 
-      share: Share your letter with your friends 
+      p2: Your letter will be processed and after a successful screening uploaded to dearswitzerland.org
+      share: Share your letter with your friends

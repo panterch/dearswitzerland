@@ -14,6 +14,7 @@ it:
     about_path: a proposito
     faq_path: FAQ
     upload_letter_path: sottomettere
+    partners_path: partner
 
   canton:
     abroad: "Svizzera all'estero"

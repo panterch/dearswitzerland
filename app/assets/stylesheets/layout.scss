@@ -548,20 +548,26 @@ body.statics.privacy, body.statics.terms {
   }
 }
 
-@media screen and (min-width: 960px) {
+.partners-section img {
+  max-height: 90px;
+  max-width: 150px !important;
+  margin: 1em 1.2em;
+  transition: all .2s ease-in-out;
+}
 
-  body, p, ol, ul, td {
-    font-size: 25px;
-    line-height: 38px;
-  }
+.partners-section a:hover {
+  text-decoration: none;
+}
 
-  h2 {
-    font-size: 25px;
-  }
+.partners-section img:hover {
+  transform: scale(1.5) ;
+}
 
+@media screen and (min-width: 1120px) {
   .mobile {
     display: none;
   }
+
   .desktop {
     display: inherit;
   }
@@ -601,7 +607,6 @@ body.statics.privacy, body.statics.terms {
 
         }
       }
-
     }
   }
 
@@ -612,6 +617,17 @@ body.statics.privacy, body.statics.terms {
       height: 180px;
       width: 180px;
     }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  body, p, ol, ul, td {
+    font-size: 25px;
+    line-height: 38px;
+  }
+
+  h2 {
+    font-size: 25px;
   }
 
   main {
@@ -696,7 +712,6 @@ body.statics.privacy, body.statics.terms {
         p {
           font-size: 18px;
         }
-
       }
 
       fieldset#consent {
@@ -708,7 +723,6 @@ body.statics.privacy, body.statics.terms {
         label {
           width: 870px;
         }
-
       }
     }
   }
@@ -758,31 +772,10 @@ body.statics.privacy, body.statics.terms {
     }
   }
 
-  .partners-section img {
-    max-height: 90px;
-    max-width: 150px !important;
-    margin: 1em 1.2em;
-    transition: all .2s ease-in-out;
-  }
-
-  .partners-section a:hover {
-    text-decoration: none;
-    transform: scale(1.5);
-  }
-
-  .partners-section img:hover {
-    transform: scale(1.5) ;
-  }
-
-
   footer {
-
     address, p {
       font-size: 9px;
     }
-
   }
-
-
 }
 

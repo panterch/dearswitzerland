@@ -14,6 +14,7 @@ rm:
     about_path: about
     faq_path: FAQ
     upload_letter_path: upload
+    partners_path: partner
 
   canton:
     abroad: "Swiss Citizen Abroad"
