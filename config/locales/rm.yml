@@ -64,6 +64,7 @@ rm:
 
     show:
       private: Quella brev ei mo veseivla mo per tei.
+      back: Zurück zu den Briefen
 
     thanks:
       title1: engraziel

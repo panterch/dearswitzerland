@@ -64,6 +64,7 @@ en:
 
     show:
       private: This page is only visible for you.
+      back: Back to letters
 
     thanks:
       title1: thank

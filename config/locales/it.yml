@@ -62,6 +62,7 @@ it:
 
     show:
       private: Questa lettera è visibile solo da voi
+      back: Torna alle lettere
 
     thanks:
       title1: Grazie

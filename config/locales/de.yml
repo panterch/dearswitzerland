@@ -60,6 +60,7 @@ de:
 
     show:
       private: Der Brief ist nur für dich sichtbar.
+      back: Zurück zu den Briefen
 
     thanks:
       title1: vielen

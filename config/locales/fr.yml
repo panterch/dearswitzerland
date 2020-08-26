@@ -61,6 +61,7 @@ fr:
 
     show:
       private: Cette page n’est visible qu’à vous.
+      back: Retour aux lettres
 
     thanks:
       title1: merci
