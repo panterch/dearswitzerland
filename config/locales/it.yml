@@ -47,7 +47,7 @@ it:
       hint: "Siete pregati di riempire le informazioni seguenti per scegliere quali informazione condividere e per pubblicare la vostra lettera sul sito."
       placeholder_name: Nome
       label_publish_name: Autorizzo a pubblicare il mio nome
-      placeholder_email: "EMail*"
+      placeholder_email: "E-Mail*"
       label_email: informazione non destinata alla pubblicazione, solo per verificazione d’identità
       placeholder_age: Età
       placeholder_canton: Cantone

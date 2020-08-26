@@ -48,7 +48,7 @@ rm:
       hint: "Cumpletescha tias informaziuns per che nus saveien publicar tia brev sin internet, e decida tgei informaziuns che ti lesses schar mussar."
       placeholder_name: Tiu num
       label_publish_name: Jeu sun d’accord che miu num vegn publicaus
-      placeholder_email: "Email*"
+      placeholder_email: "E-Mail*"
       label_email: Quell'informaziun vegn buca publicada, ella ei survescha mo per sco verificaziun
       placeholder_age: Vegliadetgna
       placeholder_canton: Cantun

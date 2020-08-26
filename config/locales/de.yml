@@ -45,7 +45,7 @@ de:
       hint: "Wir brauchen noch ein Paar Angaben, damit wir den Brief hochladen können. Und bitte gib uns an, welche Informationen du über dich veröffentlicht möchtest."
       placeholder_name: Dein Name
       label_publish_name: Ich stimme zu, dass mein Name veröffentlicht wird.
-      placeholder_email: "EMail*"
+      placeholder_email: "E-Mail*"
       label_email: wird nicht veröffentlicht, wird für Verifikation benötigt
       placeholder_age: Alter
       placeholder_canton: Kanton

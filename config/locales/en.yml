@@ -48,7 +48,7 @@ en:
       hint: "Please fill in your details so we can upload your letter, and decide which information you want to have published."
       placeholder_name: Your name
       label_publish_name: I agree to publish my name
-      placeholder_email: "EMail*"
+      placeholder_email: "E-Mail*"
       label_email: This information will not be published - verification only
       placeholder_age: Age
       placeholder_canton: Canton
