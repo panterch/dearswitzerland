@@ -47,9 +47,19 @@
         <%= link_to t("nav.faq_path"), faq_path %>
       </li>
       <li class="mobile">
-      <a href="https://instagram.com/dear.switzerland" target="_blank" class="icon">
-        <%= image_tag "instagram-light.svg" %>
-      </a>
+        <a href="https://www.facebook.com/Dear-Switzerland-103540081329743" target="_blank" class="icon">
+          <%= image_tag "facebook-light.svg" %>
+        </a>
+      </li>
+      <li class="mobile">
+        <a href="https://instagram.com/dear.switzerland" target="_blank" class="icon">
+          <%= image_tag "instagram-light.svg" %>
+        </a>
+      </li>
+      <li class="mobile">
+        <a href="https://linkedin.com/company/dearswitzerland" target="_blank" class="icon">
+          <%= image_tag "linkedin-light.svg" %>
+        </a>
       </li>
     </ul>
 
@@ -59,6 +69,26 @@
           <%= link_to locale.to_s.upcase, locale: locale %>
         </li>
       <% end %>
+    </ul>
+  </nav>
+
+  <nav class="desktop" data-target="menu.nav">
+    <ul>
+      <li>
+        <a href="https://www.facebook.com/Dear-Switzerland-103540081329743" target="_blank" class="icon">
+          <%= image_tag "facebook-light.svg" %>
+        </a>
+      </li>
+      <li>
+        <a href="https://instagram.com/dear.switzerland" target="_blank" class="icon">
+          <%= image_tag "instagram-light.svg" %>
+        </a>
+      </li>
+      <li>
+        <a href="https://linkedin.com/company/dearswitzerland" target="_blank" class="icon">
+          <%= image_tag "linkedin-light.svg" %>
+        </a>
+      </li>
     </ul>
   </nav>
 </header>
