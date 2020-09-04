@@ -544,6 +544,31 @@ body.statics.privacy, body.statics.terms {
   }
 }
 
+/**
+* team members
+*/
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.team img {
+  width: 150px;
+  margin: 1em;
+  display: inline-block;
+}
+
+.team img:hover {
+  filter: brightness(1.20);
+}
+
+.team p {
+  font-size: 0.8em;
+  letter-spacing: 1px;
+}
+
 @media screen and (min-width: 960px) {
 
   body, p, ol, ul, td {
@@ -754,7 +779,6 @@ body.statics.privacy, body.statics.terms {
     }
   }
 
-
   footer {
 
     address, p {
@@ -762,7 +786,6 @@ body.statics.privacy, body.statics.terms {
     }
 
   }
-
 
 }
 
