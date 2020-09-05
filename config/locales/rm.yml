@@ -54,9 +54,10 @@ rm:
       label_publish_age: Jeu sun d’accord che mia vegliadetgna vegn publicada
       label_publish_canton: Jeu sun d’accord che miu cantun da dimora vegn publicaus
       legend_consent: "Lungatg da tia brev "
-      label_catalog: "Eis ti d’accord che tia brev vegn publicada el catalog online e considerada per il cudisch Cara Svizra?"
-      label_recall: "Lesses ti survegnir ina copia da tia brev en in onn?"
-      label_newsletter: "Lesses ti survegnir newsletters davart l'iniziativa Cara Svizra?"
+      label_terms_html: "Ich akzeptiere die <a href='/rm/terms' target='_blank'>Bedingungen</a>."
+      label_privacy_html: "Ich akzeptiere die <a href='/rm/privacy' target='_blank'>Datenschutzerklärung</a>."
+      label_over_15: "Ich bestätige, dass ich mindestens 15 Jahre alt bin."
+      label_newsletter: "Ich möchte per E-Mail über die Initiative ”Liebe Schweiz” informiert werden."
       required: "* obligatori"
       submit: Tarmetta tia brev
 

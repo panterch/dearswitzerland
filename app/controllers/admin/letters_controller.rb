@@ -26,7 +26,7 @@ module Admin
     end
 
     def letter_params
-      params.require(:letter).permit(:body, :name, :email, :age, :canton, :lang, :catalog, :publish_name, :publish_age, :publish_canton, :recall, :newsletter, :user_upload, :status, :reviewed_pdf)
+      params.require(:letter).permit(:body, :name, :email, :age, :canton, :lang, :publish_name, :publish_age, :publish_canton, :terms, :privacy, :over_15, :newsletter, :user_upload, :status, :reviewed_pdf)
     end
 
   end

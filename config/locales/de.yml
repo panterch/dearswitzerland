@@ -51,9 +51,10 @@ de:
       label_publish_age: Ich stimme zu, dass mein Alter veröffentlicht wird.
       label_publish_canton: Ich stimme zu, dass mein Wohnkanton veröffentlicht wird.
       legend_consent: "Wähle alle zutreffenden Antworten aus:"
-      label_catalog: "Stimmst du zu, deinen Brief im Online Katalog zu veröffentlichen und dass er für das Buch “Liäbi Schwiiz” berücksichtigt wird?"
-      label_recall: "Möchtest du in einem Jahr eine Kopie deines Briefes via Email erhalten?"
-      label_newsletter: "Möchtest du per Email über unsere Initiative auf dem Laufenden gehalten werden?"
+      label_terms_html: "Ich akzeptiere die <a href='/de/terms' target='_blank'>Bedingungen</a>."
+      label_privacy_html: "Ich akzeptiere die <a href='/de/privacy' target='_blank'>Datenschutzerklärung</a>."
+      label_over_15: "Ich bestätige, dass ich mindestens 15 Jahre alt bin."
+      label_newsletter: "Ich möchte per E-Mail über die Initiative ”Liebe Schweiz” informiert werden."
       required: "* erforderlich"
       submit: Brief abschicken
 
