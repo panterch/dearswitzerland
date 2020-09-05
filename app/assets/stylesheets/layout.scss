@@ -139,6 +139,10 @@ footer {
     max-width: 100%;
   }
 
+  a.partner:hover {
+    text-decoration: none;
+  }
+
   a.icon, a.icon img {
     width: 36px;
     text-decoration: none;
@@ -575,20 +579,30 @@ body.statics.privacy, body.statics.terms {
   letter-spacing: 1px;
 }
 
-@media screen and (min-width: 960px) {
+/**
+* partners
+*/
 
-  body, p, ol, ul, td {
-    font-size: 25px;
-    line-height: 38px;
-  }
+.partners-section img {
+  max-height: 90px;
+  max-width: 150px !important;
+  margin: 1em 1.2em;
+  transition: all .2s ease-in-out;
+}
 
-  h2 {
-    font-size: 25px;
-  }
+.partners-section a:hover {
+  text-decoration: none;
+}
 
+.partners-section img:hover {
+  transform: scale(1.5) ;
+}
+
+@media screen and (min-width: 1250px) {
   .mobile {
     display: none;
   }
+
   .desktop {
     display: inherit;
   }
@@ -628,7 +642,6 @@ body.statics.privacy, body.statics.terms {
 
         }
       }
-
     }
   }
 
@@ -639,6 +652,17 @@ body.statics.privacy, body.statics.terms {
       height: 180px;
       width: 180px;
     }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  body, p, ol, ul, td {
+    font-size: 25px;
+    line-height: 38px;
+  }
+
+  h2 {
+    font-size: 25px;
   }
 
   main {
@@ -723,7 +747,6 @@ body.statics.privacy, body.statics.terms {
         p {
           font-size: 18px;
         }
-
       }
 
       fieldset#consent {
@@ -735,7 +758,6 @@ body.statics.privacy, body.statics.terms {
         label {
           width: 870px;
         }
-
       }
     }
   }
@@ -786,12 +808,9 @@ body.statics.privacy, body.statics.terms {
   }
 
   footer {
-
     address, p {
       font-size: 9px;
     }
-
   }
-
 }
 

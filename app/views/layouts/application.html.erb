@@ -43,6 +43,9 @@
       <li class="<%= "active" if :about == @nav %>">
         <%= link_to t("nav.about_path"), about_path %>
       </li>
+      <li class="<%= "active" if :partners == @nav %>">
+        <%= link_to t("nav.partners_path"), partners_path %>
+      </li>
       <li class="<%= "active" if :faq == @nav %>">
         <%= link_to t("nav.faq_path"), faq_path %>
       </li>

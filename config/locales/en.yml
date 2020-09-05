@@ -14,6 +14,7 @@ en:
     about_path: about
     faq_path: FAQ
     upload_letter_path: upload
+    partners_path: partners
 
   canton:
     abroad: "Swiss Citizen Abroad"
@@ -47,7 +48,7 @@ en:
       hint: "Please fill in your details so we can upload your letter, and decide which information you want to have published."
       placeholder_name: Your name
       label_publish_name: I agree to publish my name
-      placeholder_email: "EMail*"
+      placeholder_email: "E-Mail*"
       label_email: This information will not be published - verification only
       placeholder_age: Age
       placeholder_canton: Canton
@@ -64,6 +65,7 @@ en:
 
     show:
       private: This page is only visible for you.
+      back: Back to letters
 
     thanks:
       title1: thank
@@ -80,8 +82,8 @@ en:
       filter: "Filter by language:"
 
   footer:
-    address1: Reverse ag c/o Impact Hub, Viadukt 93 - 95
-    address2: 8005 Zürich, Switzerland
+    address1: ℅ reverse ag, Ämtlerstrasse 16
+    address2: 8003 Zürich, Switzerland
     privacy: Privacy Policy
     terms: Terms of Use
     versusvirus: "An initiative out of the #versusvirus hackathon."

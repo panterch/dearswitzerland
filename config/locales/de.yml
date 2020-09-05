@@ -12,6 +12,7 @@ de:
     about_path: about
     faq_path: FAQ
     upload_letter_path: hochladen
+    partners_path: partner
 
   canton:
     abroad: "Auslandschweizer/in"
@@ -44,7 +45,7 @@ de:
       hint: "Wir brauchen noch ein Paar Angaben, damit wir den Brief hochladen können. Und bitte gib uns an, welche Informationen du über dich veröffentlicht möchtest."
       placeholder_name: Dein Name
       label_publish_name: Ich stimme zu, dass mein Name veröffentlicht wird.
-      placeholder_email: "EMail*"
+      placeholder_email: "E-Mail*"
       label_email: wird nicht veröffentlicht, wird für Verifikation benötigt
       placeholder_age: Alter
       placeholder_canton: Kanton
@@ -60,6 +61,7 @@ de:
 
     show:
       private: Der Brief ist nur für dich sichtbar.
+      back: Zurück zu den Briefen
 
     thanks:
       title1: vielen
@@ -76,8 +78,8 @@ de:
       filter: "Sortiere nach Sprache:"
 
   footer:
-    address1: Reverse ag c/o Impact Hub, Viadukt 93 - 95
-    address2: 8005 Zürich, Schwiiz
+    address1: ℅ reverse ag, Ämtlerstrasse 16
+    address2: 8003 Zürich, Schwiiz
     privacy: Datenschutzerklärung
     terms: Nutzungsbedingungen
     versusvirus: "Liäbi Schweiz ist eine Initiative, die aus dem #versusvirus Hackathon entstanden ist."

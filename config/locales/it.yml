@@ -14,6 +14,7 @@ it:
     about_path: a proposito
     faq_path: FAQ
     upload_letter_path: sottomettere
+    partners_path: partner
 
   canton:
     abroad: "Svizzera all'estero"
@@ -46,7 +47,7 @@ it:
       hint: "Siete pregati di riempire le informazioni seguenti per scegliere quali informazione condividere e per pubblicare la vostra lettera sul sito."
       placeholder_name: Nome
       label_publish_name: Autorizzo a pubblicare il mio nome
-      placeholder_email: "EMail*"
+      placeholder_email: "E-Mail*"
       label_email: informazione non destinata alla pubblicazione, solo per verificazione d’identità
       placeholder_age: Età
       placeholder_canton: Cantone
@@ -62,6 +63,7 @@ it:
 
     show:
       private: Questa lettera è visibile solo da voi
+      back: Torna alle lettere
 
     thanks:
       title1: Grazie
@@ -78,8 +80,8 @@ it:
       filter: "Filtrare per lingua:"
 
   footer:
-    address1: Reverse ag c/o Impact Hub, Viadukt 93 - 95
-    address2: 8005 Zürich, Svizzera
+    address1: ℅ reverse ag, Ämtlerstrasse 16
+    address2: 8003 Zürich, Svizzera
     privacy: Informativa sulla privacy
     terms: condizioni di utilizzo
     versusvirus: "Un'iniziativa nata dal hackathon #versusvirus."

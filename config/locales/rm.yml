@@ -14,6 +14,7 @@ rm:
     about_path: about
     faq_path: FAQ
     upload_letter_path: upload
+    partners_path: partner
 
   canton:
     abroad: "Swiss Citizen Abroad"
@@ -47,7 +48,7 @@ rm:
       hint: "Cumpletescha tias informaziuns per che nus saveien publicar tia brev sin internet, e decida tgei informaziuns che ti lesses schar mussar."
       placeholder_name: Tiu num
       label_publish_name: Jeu sun d’accord che miu num vegn publicaus
-      placeholder_email: "Email*"
+      placeholder_email: "E-Mail*"
       label_email: Quell'informaziun vegn buca publicada, ella ei survescha mo per sco verificaziun
       placeholder_age: Vegliadetgna
       placeholder_canton: Cantun
@@ -64,6 +65,7 @@ rm:
 
     show:
       private: Quella brev ei mo veseivla mo per tei.
+      back: Zurück zu den Briefen
 
     thanks:
       title1: engraziel
@@ -80,8 +82,8 @@ rm:
       filter: "Tscharna per lungatg:"
 
   footer:
-    address1: Reverse ag c/o Impact Hub, Viadukt 93 - 95
-    address2: 8005 Zürich, Switzerland
+    address1: ℅ reverse ag, Ämtlerstrasse 16
+    address2: 8003 Zürich, Switzerland
     privacy: Privacy Policy
     terms: Terms of Use
     versusvirus: "An initiative out of the #versusvirus hackathon."

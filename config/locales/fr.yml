@@ -13,6 +13,7 @@ fr:
     about_path: à propos
     faq_path: FAQ
     upload_letter_path: télécharger
+    partners_path: partenaires
 
     canton:
       abroad: "Suisse à l'étranger"
@@ -61,6 +62,7 @@ fr:
 
     show:
       private: Cette page n’est visible qu’à vous.
+      back: Retour aux lettres
 
     thanks:
       title1: merci
@@ -77,8 +79,8 @@ fr:
       filter: "Trier par langue:"
 
   footer:
-    address1: Reverse ag c/o Impact Hub, Viadukt 93 - 95
-    address2: 8005 Zürich, Suisse
+    address1: ℅ reverse ag, Ämtlerstrasse 16
+    address2: 8003 Zürich, Suisse
     privacy: Avis de confidentialité
     terms: conditions d'utilisation
     versusvirus: "Une initiative issue du hackathon #versusvirus."

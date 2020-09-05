@@ -36,6 +36,8 @@
     </a>
   <% end %>
 
+  <%= link_to t('letters.show.back'), letters_path %>
+
   <div class="share mt-1 mb-3">
     <a href="https://www.facebook.com/sharer/sharer.php?u=<%= url_encode(request.original_url) %>" target="_blank">
       <%= image_tag "facebook.svg" %>
