@@ -34,11 +34,11 @@ class LettersController < ApplicationController
 
   def create
     @letter = Letter.new(letter_params)
+    @letter.catalog ||= true
 
     # letter came via online form - personal data needed
     if @letter.body.present?
       @letter.lang ||= I18n.locale
-      @letter.catalog ||= true
       @letter.status = :draft
       @letter.save!
       return redirect_to edit_letter_url(@letter)
