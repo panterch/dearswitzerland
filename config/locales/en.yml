@@ -10,7 +10,7 @@ en:
 
   nav:
     new_letter_path: write
-    letters_path: letters
+    letters_path: submissions
     about_path: about
     faq_path: FAQ
     upload_letter_path: upload
@@ -38,14 +38,14 @@ en:
 
     upload:
       title1: upload your
-      title2: Letter
-      nofile: upload your letter
+      title2: Thoughts
+      nofile: upload your thoughts
       hasfile: Thanks!
 
     edit:
       title1: nearly
       title2: there
-      hint: "Please fill in your details so we can upload your letter, and decide which information you want to have published."
+      hint: "Please fill in your details so we can upload your submission, and decide which information you want to have published."
       placeholder_name: Your name
       label_publish_name: I agree to publish my name
       placeholder_email: "E-Mail*"
@@ -60,24 +60,24 @@ en:
       label_over_15: "I acknowledge that I am at least 15 years old."
       label_newsletter: "I would like to receive email updates about the ”Dear Switzerland” initiative."
       required: "* required"
-      submit: Submit your letter
+      submit: Submit your thoughts
 
 
     show:
       private: This page is only visible for you.
-      back: Back to letters
+      back: Back to submissions
 
     thanks:
       title1: thank
       title2: You
-      subtitle: Your letter was succesfully uploaded.
+      subtitle: Your submission was succesfully uploaded.
       p1: You will reveice a confirmation by email in a few moments.
-      p2: "If you change your mind and would like to withdraw your letter, please send us an email:"
+      p2: "If you change your mind and would like to withdraw your submission, please send us an email:"
 
     index:
       title1: the
-      title2: Letters
-      hint: "This is a collection of the letters we’ve received so far.
+      title2: Submissions
+      hint: "This is a collection of the submissions we’ve received so far.
         Feel free to read through the thoughts of other people in Switzerland."
       filter: "Filter by language:"
 
@@ -94,5 +94,5 @@ en:
       title1: thank
       title2: You
       p1: Thank you for sharing your thoughts, wishes, hopes, comments and personal stories with dearswitzerland.
-      p2: Your letter will be processed and after a successful screening uploaded to dearswitzerland.org
-      share: Share your letter with your friends
+      p2: Your submission will be processed and after a successful screening uploaded to dearswitzerland.org
+      share: Share your thoughts with your friends

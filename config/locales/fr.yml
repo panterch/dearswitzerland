@@ -9,7 +9,7 @@ fr:
 
   nav:
     new_letter_path: écrire
-    letters_path: lettres
+    letters_path: submissions
     about_path: à propos
     faq_path: FAQ
     upload_letter_path: télécharger
@@ -36,8 +36,8 @@ fr:
 
     upload:
       title1: soumettre
-      title2: La lettre
-      nofile: télécharger la lettre
+      title2: Vos pensées
+      nofile: uploader ma submission
       hasfile: Merci!
 
     edit:
@@ -58,23 +58,23 @@ fr:
       label_over_15: "Je reconnais que j'ai au moins 15 ans."
       label_newsletter: "Je souhaite recevoir par courrier électronique des informations sur l'initiative ”Chère Suisse”."
       required: "* requis"
-      submit: Envoyer ma lettre
+      submit: Envoyer ma submission
 
     show:
       private: Cette page n’est visible qu’à vous.
-      back: Retour aux lettres
+      back: Retour aux submissions
 
     thanks:
       title1: merci
       title2: beaucoup
-      subtitle: Votre lettre a été correctement transférée.
+      subtitle: Votre submission a été correctement transférée.
       p1: Vous allez recevoir une confirmation par mail dans quelques instants.
-      p2: "Si vous changez d’avis et souhaitez retirer votre lettre, veuillez nous envoyez un e-mail correspondant à:"
+      p2: "Si vous changez d’avis et souhaitez retirer votre submission, veuillez nous envoyez un e-mail correspondant à:"
 
     index:
       title1: vos
-      title2: Lettres
-      hint: "Ceci est une collection de lettres qu’on a reçu à ce jour.
+      title2: Pensées
+      hint: "Ceci est une collection de submissions qu’on a reçu à ce jour.
         N’hésitez pas à parcourir les pensées et réflexions écrites par la communauté Suisse."
       filter: "Trier par langue:"
 
@@ -91,5 +91,5 @@ fr:
       title1: merci
       title2: beaucoup
       p1: Merci d’avoir partagé vos pensées, vos espoirs et vos histoires avec “Chère Suisse”.
-      p2: Votre lettre va être traitée dans les plus brefs délais et publiée sur “Chère Suisse”
-      share: Partagez votre lettre avec vos proches.
+      p2: Votre submission va être traitée dans les plus brefs délais et publiée sur “Chère Suisse”
+      share: Partagez vos pensées avec vos proches.
